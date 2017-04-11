@@ -20,6 +20,7 @@
 /* button class */
 .button {
 	border: none;
+	cursor: url('cursor.ani');
 	padding: 20px 20px;
 }
 
@@ -61,4 +62,9 @@
 }
 .yellow:hover {
 	background-color: rgba(255, 255, 0, 0.9);
+}
+
+/* body class */
+body {
+	cursor: url('cursor.ani');
 }
