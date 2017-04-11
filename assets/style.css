@@ -6,11 +6,6 @@
 	background-color: rgba(0, 0, 255, 0.9);
 }
 
-/* body class */
-.body {
-	cursor: url('assets/dango_cursor_by_mushroma-d56okmj.png');
-}
-
 /* box class */
 .box {
 	background-color: rgba(255, 255, 255, 0.9);
