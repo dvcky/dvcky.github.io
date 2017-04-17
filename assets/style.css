@@ -22,7 +22,7 @@
 	border: none;
 	cursor: url('cursor.ani');
 	padding: 20px 20px;
-	transition: 2s;
+	-webkit-transition: 2s;
 }
 
 /* green class */
@@ -55,6 +55,7 @@
 }
 .red:hover {
 	background-color: rgba(255, 0, 0, 0.9);
+	padding: 25px 25px;
 }
 
 /* yellow class */
