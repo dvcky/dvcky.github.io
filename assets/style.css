@@ -23,6 +23,7 @@
 	cursor: url('cursor.ani');
 	padding: 20px 20px;
 	-webkit-transition: 2s;
+	-webkit-transition-timing-function: ease;
 }
 
 /* green class */
