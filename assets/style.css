@@ -26,7 +26,7 @@
 	-webkit-transition-timing-function: ease;
 }
 .button:hover {
-	-webkit-transform:rotate(10deg);
+	-webkit-transform:rotate(360deg);
 }
 
 /* green class */
