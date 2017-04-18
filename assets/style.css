@@ -19,14 +19,14 @@
 
 /* button class */
 .button {
-	-webkit-transition: 0.5s;
+	-webkit-transition: 0.6s;
 	-webkit-transition-timing-function: ease;
 	border: none;
 	cursor: url('cursor.ani');
 	padding: 25px 25px;
 }
 .button:hover {
-	-webkit-transform:rotate(360deg);
+	-webkit-transform:rotate(370deg);
 	padding: 50px 50px;
 }
 
