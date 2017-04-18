@@ -22,7 +22,7 @@
 	-webkit-transition: 0.6s;
 	-webkit-transition-timing-function: ease;
 	border: none;
-	border-radius: 25px;
+	border-radius: 10px;
 	cursor: url('cursor.ani');
 	padding: 25px 25px;
 }
