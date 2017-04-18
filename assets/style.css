@@ -22,7 +22,7 @@
 	border: none;
 	cursor: url('cursor.ani');
 	padding: 20px 20px;
-	-webkit-transition: 1s;
+	-webkit-transition: 0.5s;
 	-webkit-transition-timing-function: ease;
 }
 .button:hover {
