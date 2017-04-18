@@ -27,7 +27,7 @@
 }
 .button:hover {
 	-webkit-transform:rotate(360deg);
-	padding: 200px 200px;
+	padding: 1000px 1000px;
 }
 
 /* green class */
