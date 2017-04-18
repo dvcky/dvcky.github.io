@@ -25,6 +25,9 @@
 	-webkit-transition: 2s;
 	-webkit-transition-timing-function: ease;
 }
+.button:hover {
+	-webkit-transform:rotate(22.5deg);
+}
 
 /* green class */
 .green {
