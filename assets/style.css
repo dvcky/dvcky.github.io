@@ -19,14 +19,15 @@
 
 /* button class */
 .button {
+	-webkit-transition: 0.5s;
+	-webkit-transition-timing-function: ease;
 	border: none;
 	cursor: url('cursor.ani');
 	padding: 20px 20px;
-	-webkit-transition: 0.5s;
-	-webkit-transition-timing-function: ease;
 }
 .button:hover {
 	-webkit-transform:rotate(360deg);
+	padding: 200px 200px;
 }
 
 /* green class */
@@ -59,7 +60,6 @@
 }
 .red:hover {
 	background-color: rgba(255, 0, 0, 0.9);
-	padding: 25px 25px;
 }
 
 /* yellow class */
