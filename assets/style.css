@@ -1,3 +1,8 @@
+/* black class */
+.black {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
 /* blue class */
 .blue {
 	background-color: rgba(0, 0, 230, 0.9);
@@ -21,7 +26,6 @@
 
 /* contentholder class */
 .contentholder {
-	background-color: rgba(255, 255, 255, 0.9);
 	border: none;
 	padding: 50px 50px;
 }
@@ -58,10 +62,31 @@
 	background-color: rgba(255, 0, 0, 0.9);
 }
 
+/* white class */
+.white {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
 /* yellow class */
 .yellow {
 	background-color: rgba(230, 230, 0, 0.9);
 }
 .yellow:hover {
 	background-color: rgba(255, 255, 0, 0.9);
+}
+
+a {
+	color: red;
+}
+
+h1 {
+	color: lime;
+}
+
+h2 {
+	color: lime;
+}
+
+p {
+	color: lime;
 }
