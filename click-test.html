@@ -1,14 +1,14 @@
 <head>
     <link rel="icon" type="image/png" href="assets/avatar.png"/>
     <link rel="stylesheet" href="assets/style.css"/>
+    <script src="assets/click-test.js"></script>
     <title>Click Test</title>
 </head>
 
 <body background="assets/omfgdogs.gif">
     <div class="white contentholder" align="center">
         <p>Working on a click test. Will release soon!</p>
-        <script src="assets/click-test.js"></script>
-        <button type="button" onClick="onClick()" style="padding: 25px 50px">Click me</button>
-        <p>Clicks: <a id="clicks">0</a></p>
+        <button type="button" onClick="onClick(); starttimer();" style="padding: 25px 50px">Click me</button>
+        <p>Clicks: <a id="clicks">0</a> | <a id="stopwatch">0.0</a></p>
     </div>
 </body>
