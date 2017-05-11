@@ -1,4 +1,5 @@
 var clicks = 0;
+var cps;
 var isDone = false;
 var millisec = 0;
 var seconds = 0;
@@ -15,7 +16,9 @@ function display(){
      isDone = true
   }
   if (isDone) {
-	  
+	cps = clicks / 10
+	document.getElementById("results").innerHTML = "Your average CPS is " + cps + <a href="click-test.html">Retry</a>;
+    document.getElementById("status").remove();
   }
   if (millisec>=9){
      millisec=0
@@ -28,19 +31,9 @@ function display(){
   }
 
 function starttimer() {
-	
+  isDone = false
   if (timer > 0) {
 	return;
   }
   display();	
-}
-
-function cleartimer() {
-    stoptimer();
-	millisec = 0;
-	seconds = 0;
-}
-function stoptimer() {
-    clearTimeout(timer);
-    timer = 0;
 }
