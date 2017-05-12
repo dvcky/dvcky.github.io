@@ -27,7 +27,8 @@
 /* contentholder class */
 .contentholder {
 	border: none;
-	padding: 50px 50px;
+	height: 400px;
+	width: 400px;
 }
 
 /* green class */
