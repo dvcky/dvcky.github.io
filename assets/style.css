@@ -27,8 +27,8 @@
 /* contentholder class */
 .contentholder {
 	border: none;
+	margin: auto;
 	padding: 20px 20px;
-	position: fixed;
 	width: 600px;
 }
 
