@@ -28,7 +28,7 @@
 .contentholder {
 	border: none;
 	padding: 20px 20px;
-	position: relative;
+	position: fixed;
 	width: 600px;
 }
 
