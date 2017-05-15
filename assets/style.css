@@ -92,9 +92,14 @@
 .yellow:hover {
     background-color: rgba(255, 255, 0, 0.9);
 }
-body {
-	color: white;
+p {
+    -webkit-transition: 0.2s;
+    -webkit-transition-timing-function: ease;
+    color: white;
     font-family: Gidolinya
+}
+p:hover {
+	-webkit-transform: scale(1.1, 1.1);
 }
 a {
 	color: white;
