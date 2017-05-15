@@ -81,8 +81,15 @@
 .yellow:hover {
     background-color: rgba(255, 255, 0, 0.9);
 }
-
 body {
+	color: white;
+    font-family: Gidolinya
+}
+a {
+	color: white;
+    font-family: Gidolinya
+}
+button {
 	color: white;
     font-family: Gidolinya
 }
