@@ -1,79 +1,79 @@
 /* black class */
 .black {
-	background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* blue class */
 .blue {
-	background-color: rgba(0, 0, 230, 0.9);
+    background-color: rgba(0, 0, 230, 0.9);
 }
 .blue:hover {
-	background-color: rgba(0, 0, 255, 0.9);
+    background-color: rgba(0, 0, 255, 0.9);
 }
 
 /* button class */
 .button {
-	-webkit-transition: 0.6s;
-	-webkit-transition-timing-function: ease;
-	border: none;
-	border-radius: 10px;
-	padding: 25px 25px;
+    -webkit-transition: 0.6s;
+    -webkit-transition-timing-function: ease;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 25px;
 }
 .button:hover {
-	-webkit-transform:rotate(370deg);
-	padding: 50px 50px;
+    -webkit-transform:rotate(370deg);
+    padding: 50px 50px;
 }
 
 /* contentholder class */
 .contentholder {
-	border: none;
-	height: 575px;
-	margin: auto;
-	padding: 20px 20px;
-	width: 600px;
+    border: none;
+    height: 575px;
+    margin: auto;
+    padding: 20px 20px;
+    width: 600px;
 }
 
 /* green class */
 .green {
-	background-color: rgba(0, 102, 0, 0.9);
+    background-color: rgba(0, 102, 0, 0.9);
 }
 .green:hover {
-	background-color: rgba(0, 128, 0, 0.9);
+    background-color: rgba(0, 128, 0, 0.9);
 }
 
 /* orange class */
 .orange {
-	background-color: rgba(230, 149, 0, 0.9);
+    background-color: rgba(230, 149, 0, 0.9);
 }
 .orange:hover {
-	background-color: rgba(255, 165, 0, 0.9);
+    background-color: rgba(255, 165, 0, 0.9);
 }
 
 /* purple class */
 .purple {
-	background-color: rgba(102, 0, 102, 0.9);
+    background-color: rgba(102, 0, 102, 0.9);
 }
 .purple:hover {
-	background-color: rgba(128, 0, 128, 0.9);
+    background-color: rgba(128, 0, 128, 0.9);
 }
 
 /* red class */
 .red {
-	background-color: rgba(230, 0, 0, 0.9);
+    background-color: rgba(230, 0, 0, 0.9);
 }
 .red:hover {
-	background-color: rgba(255, 0, 0, 0.9);
+    background-color: rgba(255, 0, 0, 0.9);
 }
 
 /* white class */
 .white {
-	background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* yellow class */
 .yellow {
-	background-color: rgba(230, 230, 0, 0.9);
+    background-color: rgba(230, 230, 0, 0.9);
 }
 .yellow:hover {
-	background-color: rgba(255, 255, 0, 0.9);
+    background-color: rgba(255, 255, 0, 0.9);
 }
