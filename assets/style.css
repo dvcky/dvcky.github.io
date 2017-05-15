@@ -18,7 +18,7 @@
 
 /* button class */
 .button {
-    -webkit-transition: 0.5s;
+    -webkit-transition: 0.2s;
     -webkit-transition-timing-function: ease;
     border: none;
     border-radius: 10px;
