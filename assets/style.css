@@ -1,32 +1,10 @@
+/* font face */
 @font-face {
     font-family: Gidolinya;
     src: url(Gidolinya-Regular.otf);
 }
 
-/* black class */
-.black {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-/* blue class */
-.blue {
-    background-color: rgba(0, 0, 230, 0.9);
-}
-.blue:hover {
-    background-color: rgba(0, 0, 255, 0.9);
-}
-
-/* button class */
-.button {
-    -webkit-transition: 0.4s;
-    -webkit-transition-timing-function: ease;
-    border: none;
-    border-radius: 10px;
-    padding: 25px 25px;
-}
-.button:hover {
-    -webkit-transform:rotate(22.5deg);
-}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 /* contentholder class */
 .contentholder {
@@ -35,14 +13,6 @@
     margin: auto;
     padding: 20px 20px;
     width: 600px;
-}
-
-/* green class */
-.green {
-    background-color: rgba(0, 102, 0, 0.9);
-}
-.green:hover {
-    background-color: rgba(0, 128, 0, 0.9);
 }
 
 /* image class */
@@ -56,56 +26,59 @@
     -webkit-transform: scale(1.1, 1.1);
 }
 
-/* orange class */
-.orange {
-    background-color: rgba(230, 149, 0, 0.9);
-}
-.orange:hover {
-    background-color: rgba(255, 165, 0, 0.9);
-}
-
-/* purple class */
-.purple {
-    background-color: rgba(102, 0, 102, 0.9);
-}
-.purple:hover {
-    background-color: rgba(128, 0, 128, 0.9);
-}
-
-/* red class */
-.red {
-    background-color: rgba(230, 0, 0, 0.9);
-}
-.red:hover {
-    background-color: rgba(255, 0, 0, 0.9);
-}
-
-/* white class */
-.white {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-/* yellow class */
-.yellow {
-    background-color: rgba(230, 230, 0, 0.9);
-}
-.yellow:hover {
-    background-color: rgba(255, 255, 0, 0.9);
-}
-p {
-    -webkit-transition: 0.2s;
-    -webkit-transition-timing-function: ease;
-    color: white;
-    font-family: Gidolinya
-}
-p:hover {
-	-webkit-transform: scale(1.1, 1.1);
-}
-a {
+.menu {
+    position: fixed;
 	color: white;
-    font-family: Gidolinya
+	width: 1000px;
+	height: 100px;
 }
+
+/* button class */
 button {
-	color: white;
+    -webkit-transition: 0.4s;
+    -webkit-transition-timing-function: ease;
+    border: none;
+    border-radius: 10px;
+    color: gray;
+    padding: 25px 25px;
+}
+button:hover {
+    -webkit-transform:rotate(10deg);
+}
+img {
+    -webkit-animation: fadeIn ease 1;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+h1 {
+    -webkit-animation: fadeIn ease 1;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+h2 {
+    -webkit-animation: fadeIn ease 1;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+p {
+    -webkit-animation: fadeIn ease 1;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+/* all classes */
+* {
+    color: white;
     font-family: Gidolinya
 }
