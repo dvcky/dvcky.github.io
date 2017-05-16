@@ -10,6 +10,7 @@
 .contentholder {
     vertical-align: middle;
     border: none;
+    margin: auto;
     height: 575px;
     text-align: center;
     padding: 20px 20px;
