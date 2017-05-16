@@ -11,10 +11,9 @@
     vertical-align: middle;
     border: none;
     margin: auto;
-    height: 575px;
+    height: 100%;
     text-align: center;
-    padding: 20px 20px;
-    width: 600px;
+    width: 100%;
 }
 
 /* image class */
