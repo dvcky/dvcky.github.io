@@ -9,10 +9,9 @@
 /* contentholder class */
 .contentholder {
     vertical-align: middle;
-    margin: auto;
     border: none;
     height: 575px;
-    margin: auto;
+    text-align: center;
     padding: 20px 20px;
     width: 600px;
 }
