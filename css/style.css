@@ -80,7 +80,12 @@ p {
 	opacity: 0;
 }
 
-* {
+h1, h2, h3, h4, h5, h6, p {
     color: white;
+    font-family: Gidolinya;
+}
+
+a {
+    color: gray;
     font-family: Gidolinya;
 }
