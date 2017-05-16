@@ -8,6 +8,8 @@
 
 /* contentholder class */
 .contentholder {
+    vertical-align: middle;
+    margin: auto;
     border: none;
     height: 575px;
     margin: auto;
