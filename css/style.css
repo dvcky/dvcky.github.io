@@ -1,10 +1,17 @@
 /* font face */
 @font-face {
     font-family: Gidolinya;
-    src: url(Gidolinya-Regular.otf);
+    src: url(../assets/Gidolinya-Regular.otf);
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#background {
+    background: url(../images/background.svg);
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 /* contentholder class */
 .contentholder {
@@ -35,11 +42,15 @@
 
 /* button class */
 button {
+    -webkit-animation-delay: 2s;
+    -webkit-animation: fadeIn ease 1;
+	font-size: 22px;
     -webkit-transition: 0.4s;
     -webkit-transition-timing-function: ease;
     border: none;
+	font-weight:bold;
+	background: white;
     border-radius: 10px;
-    color: gray;
     padding: 25px 25px;
 }
 button:hover {
@@ -54,6 +65,8 @@ img {
 }
 
 h1 {
+	color: white;
+    font-family: Gidolinya
     -webkit-animation: fadeIn ease 1;
     -webkit-animation-delay: 1s;
     -webkit-animation-duration: 2s;
@@ -62,6 +75,8 @@ h1 {
 }
 
 h2 {
+	color: white;
+    font-family: Gidolinya
     -webkit-animation: fadeIn ease 1;
     -webkit-animation-delay: 2s;
     -webkit-animation-duration: 2s;
@@ -70,6 +85,8 @@ h2 {
 }
 
 p {
+	color: white;
+    font-family: Gidolinya
     -webkit-animation: fadeIn ease 1;
     -webkit-animation-delay: 1.5s;
     -webkit-animation-duration: 2s;
@@ -77,8 +94,7 @@ p {
 	opacity: 0;
 }
 
-/* all classes */
 * {
-    color: white;
+	color: white;
     font-family: Gidolinya
 }
