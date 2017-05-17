@@ -36,14 +36,13 @@
 button {
     -webkit-animation-delay: 2s;
     -webkit-animation: fadeIn ease 1;
-	font-size: 22px;
     -webkit-transition: 0.4s;
     -webkit-transition-timing-function: ease;
     border: none;
-	font-weight:bold;
 	background: white;
     border-radius: 10px;
     padding: 25px 25px;
+	opacity: 0;
 }
 button:hover {
     -webkit-transform:rotate(10deg);
