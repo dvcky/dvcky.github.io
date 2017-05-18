@@ -31,7 +31,7 @@ button:hover {
 
 /* img class */
 img {
-    animation: fadeIn ease 1;
+    animation: fadeIn ease 1 forwards;
     animation-delay: 0.5s;
     animation-duration: 2s;
     border-radius: 50%;
