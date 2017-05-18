@@ -4,7 +4,10 @@
     src: url(../assets/Gidolinya-Regular.otf);
 }
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { 
+    from { opacity:0; } 
+    to { opacity:1; } 
+}
 
 /* contentholder class */
 .contentholder {
@@ -12,17 +15,6 @@
     height: 100%;
     text-align: center;
     width: 100%;
-}
-
-/* image class */
-.image {
-    -webkit-box-shadow: 0 0 25px white;
-    -webkit-transition: 0.2s;
-    -webkit-transition-timing-function: ease;
-    border-radius: 50%;
-}
-.image:hover {
-    -webkit-transform: scale(1.1, 1.1);
 }
 
 .menu {
@@ -34,10 +26,10 @@
 
 /* button class */
 button {
-    -webkit-animation-delay: 2s;
-    -webkit-animation: fadeIn ease 1;
-    -webkit-transition: 0.4s;
-    -webkit-transition-timing-function: ease;
+    animation: fadeIn ease 1;
+    animation-delay: 2.5s;
+    transition: 0.4s;
+    transition-timing-function: ease;
     border: none;
 	background: white;
     border-radius: 10px;
@@ -45,35 +37,42 @@ button {
 	opacity: 0;
 }
 button:hover {
-    -webkit-transform:rotate(10deg);
+    transform:rotate(10deg);
 }
 img {
-    -webkit-animation: fadeIn ease 1;
-    -webkit-animation-delay: 0.5s;
+	-webkit-box-shadow: 0 0 25px white;
+    animation: fadeIn ease 1;
+	border-radius: 50%;
+    animation-delay: 0.5s;
     -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode:forwards;
+	-webkit-transition: 0.2s;
+    -webkit-transition-timing-function: ease;
 	opacity: 0;
+}
+img:hover {
+    -webkit-transform: scale(1.1, 1.1);
 }
 
 h1 {
-    -webkit-animation: fadeIn ease 1;
-    -webkit-animation-delay: 1s;
+    animation: fadeIn ease 1;
+    animation-delay: 1s;
     -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode:forwards;
 	opacity: 0;
 }
 
 h2 {
-    -webkit-animation: fadeIn ease 1;
-    -webkit-animation-delay: 2s;
+    animation: fadeIn ease 1;
+    animation-delay: 2s;
     -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode:forwards;
 	opacity: 0;
 }
 
 p {
-    -webkit-animation: fadeIn ease 1;
-    -webkit-animation-delay: 1.5s;
+    animation: fadeIn ease 1;
+    animation-delay: 1.5s;
     -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode:forwards;
 	opacity: 0;
