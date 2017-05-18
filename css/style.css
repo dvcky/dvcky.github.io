@@ -45,26 +45,26 @@ img:hover {
 
 /* h1 class */
 h1 {
-    animation: fadeIn ease 1;
+    animation: fadeIn ease 1 forwards;
     animation-delay: 1s;
     animation-duration: 2s;
-	opacity: 0;
+    opacity: 0;
 }
 
+/* h2 class */
 h2 {
-    animation: fadeIn ease 1;
+    animation: fadeIn ease 1 forwards;
     animation-delay: 2s;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode:forwards;
-	opacity: 0;
+    animation-duration: 2s;
+    opacity: 0;
 }
 
+/* p class */
 p {
-    animation: fadeIn ease 1;
+    animation: fadeIn ease 1 forwards;
     animation-delay: 1.5s;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode:forwards;
-	opacity: 0;
+    animation-duration: 2s;
+    opacity: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -73,6 +73,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
-    color: LightGray;
+    color: lightgray;
     font-family: Gidolinya;
 }
