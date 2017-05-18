@@ -4,6 +4,7 @@
     src: url(../assets/Gidolinya-Regular.otf);
 }
 
+/* keyframes */
 @keyframes fadeIn { 
     from { opacity:0; } 
     to { opacity:1; } 
@@ -12,53 +13,41 @@
 /* contentholder class */
 .contentholder {
     border: none;
-    height: 100%;
     text-align: center;
-    width: 100%;
-}
-
-.menu {
-    position: fixed;
-	color: white;
-	width: 1000px;
-	height: 100px;
 }
 
 /* button class */
 button {
-    animation: fadeIn ease 1;
-    animation-delay: 2.5s;
-    transition: 0.4s;
-    transition-timing-function: ease;
+    background: white;
     border: none;
-	background: white;
     border-radius: 10px;
     padding: 25px 25px;
-	opacity: 0;
+    transition: 0.4s;
+    transition-timing-function: ease;
 }
 button:hover {
     transform:rotate(10deg);
 }
+
+/* img class */
 img {
-	-webkit-box-shadow: 0 0 25px white;
     animation: fadeIn ease 1;
-	border-radius: 50%;
     animation-delay: 0.5s;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode:forwards;
-	-webkit-transition: 0.2s;
-    -webkit-transition-timing-function: ease;
-	opacity: 0;
+    animation-duration: 2s;
+    border-radius: 50%;
+    box-shadow: 0 0 25px white;
+    opacity: 0;
+    transition: 0.2s;
 }
 img:hover {
-    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
+/* h1 class */
 h1 {
     animation: fadeIn ease 1;
     animation-delay: 1s;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-fill-mode:forwards;
+    animation-duration: 2s;
 	opacity: 0;
 }
 
