@@ -13,7 +13,9 @@
 /* contentholder class */
 .contentholder {
     border: none;
+    height: 75%
     text-align: center;
+    width: 50%
 }
 
 /* button class */
