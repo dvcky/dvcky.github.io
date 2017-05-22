@@ -12,7 +12,6 @@
 
 /* contentholder class */
 .contentholder {
-    background: white;
     border: none;
     margin: 0 auto;
     text-align: center;
@@ -34,12 +33,12 @@ div {
 
 /* h1, h2, h3, h4, h5, h6, p elements */
 h1, h2, h3, h4, h5, h6, p {
-    color: black;
+    color: white;
     font-family: Gidolinya;
 }
 
 /* a element */
 a {
-    color: gray;
+    color: lightgray;
     font-family: Gidolinya;
 }
