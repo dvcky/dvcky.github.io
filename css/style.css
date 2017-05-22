@@ -13,67 +13,31 @@
 /* contentholder class */
 .contentholder {
     border: none;
-    height: 75%
+    margin: 0 auto;
     text-align: center;
-    width: 50%
+    width: 50vw;
 }
 
-/* button class */
+/* button element */
 button {
     background: white;
     border: none;
-    border-radius: 10px;
-    padding: 25px 25px;
-    transition: 0.4s;
-    transition-timing-function: ease;
-}
-button:hover {
-    transform:rotate(10deg);
 }
 
-/* img class */
-img {
-    animation: fadeIn ease 1 forwards;
-    animation-delay: 0.5s;
+/* div element */
+div {
+    animation: fadeIn ease forwards;
     animation-duration: 2s;
-    border-radius: 50%;
-    box-shadow: 0 0 25px white;
-    opacity: 0;
-    transition: 0.2s;
-}
-img:hover {
-    transform: scale(1.1, 1.1);
+	opacity: 0;
 }
 
-/* h1 class */
-h1 {
-    animation: fadeIn ease 1 forwards;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    opacity: 0;
-}
-
-/* h2 class */
-h2 {
-    animation: fadeIn ease 1 forwards;
-    animation-delay: 2s;
-    animation-duration: 2s;
-    opacity: 0;
-}
-
-/* p class */
-p {
-    animation: fadeIn ease 1 forwards;
-    animation-delay: 1.5s;
-    animation-duration: 2s;
-    opacity: 0;
-}
-
+/* h1, h2, h3, h4, h5, h6, p elements */
 h1, h2, h3, h4, h5, h6, p {
     color: white;
     font-family: Gidolinya;
 }
 
+/* a element */
 a {
     color: lightgray;
     font-family: Gidolinya;
