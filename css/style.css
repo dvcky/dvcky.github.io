@@ -18,6 +18,11 @@
     width: 50vw;
 }
 
+/* disabled class */
+.disabled {
+    filter: brightness(0.8);
+}
+
 /* button element */
 button {
     background: white;

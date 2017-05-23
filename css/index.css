@@ -9,6 +9,11 @@
     from { opacity:0; } 
     to { opacity:1; } 
 }
+@keyframes shakeVertical { 
+    0%, 100% {transform: translate(0px);} 
+    20%, 60% {transform: translate(10px);}
+    40%, 80% {transform: translate(-10px);}
+}
 
 /* contentholder class */
 .contentholder {
@@ -18,21 +23,8 @@
     width: 50vw;
 }
 
-/* button class */
-button {
-    background: white;
-    border: none;
-    border-radius: 10px;
-    padding: 25px 25px;
-    transition: 0.4s;
-    transition-timing-function: ease;
-}
-button:hover {
-    transform:rotate(10deg);
-}
-
-/* img class */
-.img {
+/* avatar class */
+.avatar {
     animation: fadeIn ease 1 forwards;
     animation-duration: 2s;
     border-radius: 50%;
@@ -40,8 +32,13 @@ button:hover {
     opacity: 0;
     transition: 0.2s;
 }
-.img:hover {
+.avatar:hover {
     transform: scale(1.1, 1.1);
+}
+
+/* disabled class */
+.disabled {
+    filter: brightness(0.8);
 }
 
 /* h1 class */
