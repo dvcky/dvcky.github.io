@@ -1,6 +1,8 @@
-function setCookie(c_name,value)
+function setCookie(c_name,value,exdays)
 {
-    var c_value=escape(value);
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
     document.cookie=c_name + "=" + c_value;
 }
 
@@ -19,23 +21,27 @@ function getCookie(c_name)
       }
 }
 
-/* audio src */
 var audio = new Audio('../audio/Resonance%20-%20Loneliness%20%5Bmp3clan%5D.mp3');
-var resumeTime = getCookie('resumeTime');
+var played = false;
+var tillPlayed = getCookie('timePlayed');
+function update()
+{
+    if(!played){
+        if(tillPlayed){
+        audio.currentTime = tillPlayed;
+        audio.play();
+        audio.loop = true;
+        audio.volume = 0.1;
+        played = true;
+        }
+        else {
+                audio.play();
+                played = true;
+        }
+    }
 
-/* audio settings */
-audio.autoplay = true;
-audio.currentTime = resumeTime;
-audio.loop = true;
-audio.volume = 0.1;
-
-/* audio play */
-audio.play();
-
-/* audio resume */
-load()
-function load() {
-    setInterval(function() {
-        setCookie('resumeTime', audio.currentTime);
-    }, 3000);
+    else {
+    setCookie('timePlayed', audio.currentTime);
+    }
 }
+setInterval(update,1000);
