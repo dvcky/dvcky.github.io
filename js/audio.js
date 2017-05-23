@@ -30,6 +30,8 @@ function update()
         if(tillPlayed){
         audio.currentTime = tillPlayed;
         audio.play();
+        audio.loop = true;
+        audio.volume = 0.1;
         played = true;
         }
         else {
