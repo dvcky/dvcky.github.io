@@ -37,5 +37,5 @@ load()
 function load() {
     setInterval(function() {
         setCookie('resumeTime', audio.currentTime);
-    }, 1);
+    }, 3000);
 }
