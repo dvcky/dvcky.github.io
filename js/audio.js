@@ -30,12 +30,12 @@ function update()
         if(tillPlayed){
         audio.currentTime = tillPlayed;
         audio.play();
-        audio.loop = true;
-        audio.volume = 0.1;
         played = true;
         }
         else {
                 audio.play();
+                audio.loop = true;
+                audio.volume = 0.1;
                 played = true;
         }
     }
@@ -44,4 +44,4 @@ function update()
     setCookie('timePlayed', audio.currentTime);
     }
 }
-setInterval(update,1000);
+setInterval(update,1);
