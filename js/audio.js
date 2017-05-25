@@ -21,7 +21,7 @@ function getCookie(c_name)
       }
 }
 
-var audio = new Audio('../audio/Resonance%20-%20Loneliness%20%5Bmp3clan%5D.mp3');
+var audio = new Audio('../audio/Resonance%20-%20Loneliness.mp3');
 var played = false;
 var tillPlayed = getCookie('timePlayed');
 function update()
