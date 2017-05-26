@@ -36,12 +36,6 @@
     filter: brightness(0.8);
 }
 
-/* body element */
-body {
-    overflow:hidden;
-    overflow-y: scroll;
-}
-
 /* button element */
 button {
     background: white;
