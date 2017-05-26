@@ -39,6 +39,7 @@
 /* body element */
 body {
     overflow:hidden;
+    overflow-y: scroll;
 }
 
 /* button element */
