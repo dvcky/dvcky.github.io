@@ -10,6 +10,10 @@
     to { opacity:1; } 
 }
 
+::scrollbar {
+    width: 0px;  /* remove scrollbar space */
+}
+
 /* avatar class */
 .avatar {
     animation: fadeIn ease 1 forwards;
