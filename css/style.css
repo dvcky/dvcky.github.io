@@ -11,8 +11,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    background: transparent;
 }
 
 /* avatar class */
@@ -39,6 +39,17 @@
 /* disabled class */
 .disabled {
     filter: brightness(0.8);
+}
+
+.player {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    bottom: 0;
+    height: 75px;
+    position: fixed;
+    right: 10;
+    width: 400px;
 }
 
 /* button element */
