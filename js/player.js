@@ -5,7 +5,7 @@ var ap4 = new APlayer({
     showlrc: false,
     mutex: true,
     theme: '#7cfc00',
-    mode: 'random',
+    mode: 'circulation',
     music: [
         {
             title: 'Loneliness',
