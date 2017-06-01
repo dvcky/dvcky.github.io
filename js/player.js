@@ -18,7 +18,7 @@ var ap = new APlayer({
     {                                                           // Required, music info, see: ###With playlist
         title: 'Fantastic',                                          // Required, music title
         author: 'Sub.Sound',                          // Required, music author
-        url: 'audio/Resonance%20-%20Loneliness.mp3',                   // Required, music url
-        pic: 'images/Resonance%20-%20Loneliness.jpg',  // Optional, music picture
-    },
+        url: 'audio/Sub.Sound%20-%20Fantastic.mp3',                   // Required, music url
+        pic: 'images/Sub.Sound%20-%20Fantastic.jpg',  // Optional, music picture
+    }
 });
