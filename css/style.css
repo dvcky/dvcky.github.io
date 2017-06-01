@@ -41,6 +41,14 @@
     filter: brightness(0.8);
 }
 
+.player {
+    background: white;
+    bottom: 10px;
+    position: fixed;
+    right: 10px;
+    width: 20vw;
+}
+
 /* button element */
 button {
     background: white;
