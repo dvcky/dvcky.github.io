@@ -1,7 +1,7 @@
 var ap4 = new APlayer({
     element: document.getElementById('player4'),
     narrow: false,
-    autoplay: false,
+    autoplay: true,
     showlrc: false,
     mutex: true,
     theme: '#7cfc00',
