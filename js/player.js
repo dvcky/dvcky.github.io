@@ -1,4 +1,4 @@
-var ap = new APlayer({
+var ap4 = new APlayer({
     element: document.getElementById('player'),
     narrow: false,
     autoplay: false,
