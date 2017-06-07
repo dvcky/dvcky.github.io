@@ -24,6 +24,12 @@ var ap4 = new APlayer({
             author: 'Orito Shinji',
             url: 'audio/Orito%20Shinji%20-%20Yukinohara.mp3',
             pic: 'images/Orito%20Shinji%20-%20Yukinohara.jpg'
+        },
+        {
+            title: 'me & u',
+            author: 'succducc',
+            url: 'audio/succducc%20-%20me%20%26%20u.mp3',
+            pic: 'images/succducc%20-%20me%20%26%20u.jpg'
         }
     ]
 });
