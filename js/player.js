@@ -18,6 +18,12 @@ var ap4 = new APlayer({
             author: 'Sub.Sound',
             url: 'audio/Sub.Sound%20-%20Fantastic.mp3',
             pic: 'images/Sub.Sound%20-%20Fantastic.jpg'
+        },
+        {
+            title: 'Yukinohara',
+            author: 'Orito Shinji',
+            url: 'audio/Orito%20Shinji%20-%20Yukinohara.mp3',
+            pic: 'images/Orito%20Shinji%20-%20Yukinohara.jpg'
         }
     ]
 });
