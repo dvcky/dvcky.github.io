@@ -6,7 +6,7 @@ var ap4 = new APlayer({
     mutex: true,
     theme: '#7cfc00',
     mode: 'circulation',
-    listmaxheight: '80px',
+    listmaxheight: '0px',
     music: [
         {
             title: 'Loneliness',
