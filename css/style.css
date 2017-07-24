@@ -10,20 +10,6 @@
     to { opacity:1; } 
 }
 
-/* hide scrollbar */
-#hidescrollbar1{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-#hidescrollbar2{
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    padding-right: 0px;
-}
-
 /* avatar class */
 .avatar {
     animation: fadeIn ease 1 forwards;
