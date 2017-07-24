@@ -12,7 +12,6 @@
 
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent;
 }
 
 /* avatar class */
@@ -51,7 +50,7 @@
 
 /* body element */
 body {
-    overflow:hidden;
+    overflow: scroll;
 }
 
 /* button element */
