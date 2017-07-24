@@ -48,11 +48,6 @@
     width: 20vw;
 }
 
-/* body element */
-body {
-    overflow: scroll;
-}
-
 /* button element */
 button {
     background: white;
@@ -79,6 +74,12 @@ h2.home {
     animation-delay: 1.5s;
     animation-duration: 2s;
     opacity: 0;
+}
+
+/* html element */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 /* p class, specific to the home class */
