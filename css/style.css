@@ -49,6 +49,11 @@
     width: 20vw;
 }
 
+/* body element */
+body {
+    overflow:hidden;
+}
+
 /* button element */
 button {
     background: white;
