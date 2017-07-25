@@ -21,14 +21,14 @@
     width: 50vw;
 }
 
-/* h1, h2, h3, h4, h5, h6, and p elements */
-h1, h2, h3, h4, h5, h6, p {
-    color: white;
-    font-family: Gidolinya;
-}
-
 /* a element */
 a {
     color: lightgray;
+    font-family: Gidolinya;
+}
+
+/* h1, h2, h3, h4, h5, h6, and p elements */
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
     font-family: Gidolinya;
 }
