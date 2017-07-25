@@ -37,6 +37,12 @@ a {
     font-family: Gidolinya;
 }
 
+/* button element */
+button {
+    background: white;
+    border: none;
+}
+
 /* h1, h2, h3, h4, h5, h6, and p elements */
 h1, h2, h3, h4, h5, h6, p {
     color: white;
