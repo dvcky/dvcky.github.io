@@ -6,9 +6,11 @@
 </head>
 
 <body background="images/background.jpg" style="background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
-    <a href="/"><img src="images/home.png" width="128" height="64"></a>
-    <img class="disabled" src="images/cps-test.png" width="128" height="64"></a>
-    <a href="resources.html"><img src="images/resources.png" width="128" height="64"></a>
+    <div class="menu">
+        <a href="/"><img src="images/home.png" width="30px" height="30px" style="margin: 5px;"></a>
+        <a href="cps-test.html"><img src="images/cursor.png" width="30px" height="30px" style="margin: 5px;"></a>
+        <a href="resources.html"><img src="images/book.png" width="30px" height="30px" style="margin: 5px;"></a>
+    </div>
     <div class="content">
         <h1>CPS Test</h1>
         <p>Find out how fast you can click with Cole's CPS test! During this test, you will be given 10 seconds to click as fast as you can. Good luck!</p>
@@ -19,10 +21,5 @@
         <h2><a id="results"></a></h2>
         <button onClick="onClick(); onStart();" style="padding: 50px 275px" id="status">Click me</button>
         <p id="status">Clicks: <a id="clicks">0</a> | Stopwatch: <a id="stopwatch">0.00</a></p>
-        <div class="menu">
-            <a href="/"><img src="images/home.png" width="30px" height="30px" style="margin: 5px;"></a>
-            <a href="cps-test.html"><img src="images/cursor.png" width="30px" height="30px" style="margin: 5px;"></a>
-            <a href="resources.html"><img src="images/book.png" width="30px" height="30px" style="margin: 5px;"></a>
-        </div>
     </div>
 </body>
