@@ -23,6 +23,18 @@
     transform: scale(1.2, 1.2);
 }
 
+/* menu class */
+.menu {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 10px white;
+    height: 120px;
+    left: 0%;
+    position: fixed;
+    top: 35%;
+    width: 40px;
+}
+
 /* a element */
 a {
     color: lightgray;
