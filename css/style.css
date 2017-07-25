@@ -21,6 +21,16 @@
     width: 50vw;
 }
 
+/* menu class */
+.menu {
+    background-color: white;
+    height: 200px;
+    left: 0%;
+    position: fixed;
+    top: 50%;
+    width: 50px;
+}
+
 /* a element */
 a {
     color: lightgray;
