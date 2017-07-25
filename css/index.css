@@ -1,0 +1,60 @@
+/* font face */
+@font-face {
+    font-family: Gidolinya;
+    src: url(../files/Gidolinya-Regular.otf);
+}
+
+/* keyframes */
+@keyframes fadeIn { 
+    from { opacity:0; } 
+    to { opacity:1; } 
+}
+
+/* avatar class */
+.avatar {
+    animation: fadeIn ease 1 forwards;
+    animation-duration: 2s;
+    border-radius: 50%;
+    box-shadow: 0 0 25px white;
+    opacity: 0;
+    transition: 0.2s;
+}
+.avatar:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* a element */
+a {
+    color: lightgray;
+    font-family: Gidolinya;
+}
+
+/* h1 class, specific to the home class */
+h1.home {
+    animation: fadeIn ease 1 forwards;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+/* h1, h2, h3, h4, h5, h6, and p elements */
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    font-family: Gidolinya;
+}
+
+/* h2 class, specific to the home class */
+h2.home {
+    animation: fadeIn ease 1 forwards;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+/* p class, specific to the home class */
+p.home {
+    animation: fadeIn ease 1 forwards;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    opacity: 0;
+}
