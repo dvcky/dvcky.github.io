@@ -24,11 +24,11 @@
 /* menu class */
 .menu {
     background-color: white;
-    height: 200px;
+    height: 150px;
     left: 0%;
     position: fixed;
     top: 35%;
-    width: 50px;
+    width: 40px;
 }
 
 /* a element */
