@@ -10,6 +10,29 @@
     to { opacity:1; } 
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0);
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 /* avatar class */
 .avatar {
     animation: fadeIn ease 1 forwards;
