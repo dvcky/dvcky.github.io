@@ -1,9 +1,21 @@
-var dropdown = document.getElementById("dropdown");
-dropdown.onchange = function() {
-    var audio = document.getElementById('audio');
-    var source = document.getElementById('source');
-    source.src = dropdown.value;
+$(document).ready(function() {
 
+  $('#selection').on('change', function() {
+    change($(this).val());
+  });
+
+});
+
+
+function change(sourceUrl) {
+  var audio = document.getElementById("player");
+  var source = document.getElementById("mp3_src");
+
+  audio.pause();
+
+  if (sourceUrl) {
+    source.src = sourceUrl;
     audio.load();
     audio.play();
-};
+  }
+}
