@@ -1,6 +1,7 @@
 <head>
     <link rel="icon" type="image/png" href="images/avatar-v2.png"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/nature-sounds.js"></script>
     <title>Nature Sounds</title>
 </head>
 <body background="images/background.jpg" style="background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
@@ -13,8 +14,11 @@
         <h1>Nature Sounds</h1>
         <select id="dropdown">
             <option value="1" selected="selected">silence.</option>
-            <option value="2">rain</option>
-            <option value="1.%20Storm%20-%20Powerful,%20Exhilarating%20Thunderstorm%20Sounds.mp3">other</option>
+            <option value="audio/Nature%20Sounds/1.%20Storm%20-%20Powerful,%20Exhilarating%20Thunderstorm%20Sounds.mp3">storm</option>
+            <option value="audio/Nature%20Sounds/2.%20Beach%20Campfire%20-%20Calm%20Waves%20and%20Crackling%20Log%20Fire%20Sounds.mp3">beach campfire</option>
         </select>
+        <audio id="audio">
+            <source id="source" src=""/>
+        </audio>
     </div>
 </body>
