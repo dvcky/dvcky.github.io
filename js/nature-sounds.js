@@ -1,21 +1,10 @@
-$(document).ready(function() {
-
-  $('#selection').on('change', function() {
-    change($(this).val());
-  });
-
-});
-
-
-function change(sourceUrl) {
-  var audio = document.getElementById("player");
-  var source = document.getElementById("mp3_src");
-
-  audio.pause();
-
-  if (sourceUrl) {
-    source.src = sourceUrl;
-    audio.load();
-    audio.play();
-  }
+function changeSound() {
+	var audio = document.getElementById("audio");
+	var source = document.getElementById("source");
+	var sound = document.getElementById("sound").value;
+	
+	source.src = sound
+	
+	audio.load();
+	audio.play();
 }

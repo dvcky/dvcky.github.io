@@ -1,7 +1,6 @@
 <head>
     <link rel="icon" type="image/png" href="images/avatar-v2.png"/>
     <link rel="stylesheet" href="css/style.css"/>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/nature-sounds.js"></script>
     <title>Nature Sounds</title>
 </head>
@@ -13,13 +12,13 @@
     </div>
     <div style="border: none; margin: 0 auto; text-align: center; width: 50%;">
         <h1>Nature Sounds</h1>
-        <select id="selection">
-            <option value="none" selected="selected">silence.</option>
+        <select id="sound" onchange="changeSound()">
+            <option value="nothing">silence.</option>
             <option value="audio/Nature%20Sounds/1.%20Storm%20-%20Powerful,%20Exhilarating%20Thunderstorm%20Sounds.mp3">storm</option>
             <option value="beach campfire">beach campfire</option>
         </select>
-		<audio id="player" autoplay>
-		<source id="mp3_src" src=""/>
-</audio>
+		<audio id="audio" autoplay loop>
+		<source id="source" src=""/>
+        </audio>
     </div>
 </body>
