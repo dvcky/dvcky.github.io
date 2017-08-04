@@ -52,7 +52,9 @@ button {
 
 /* select element */
 select {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    font-family: Gidolinya;
 }
 
 /* h1, h2, h3, h4, h5, h6, and p elements */
