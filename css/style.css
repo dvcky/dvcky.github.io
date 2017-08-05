@@ -36,6 +36,7 @@
     height: 100%;
     animation: fadeIn ease forwards;
     animation-duration: 2.1s;
+    animation-delay: 3.5s;
 }
 
 /* menu class */
