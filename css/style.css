@@ -26,6 +26,12 @@
     width: 50vw;
 }
 
+/* mobile class */
+.mobile {
+    height: 100%
+    width: 100%
+}
+
 /* menu class */
 .menu {
     background-color: white;
