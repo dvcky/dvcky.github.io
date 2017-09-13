@@ -5,5 +5,6 @@ function changeSound() {
 	
 	source.src = sound
 	
+	audio.load();
 	audio.play();
 }
