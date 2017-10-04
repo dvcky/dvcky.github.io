@@ -89,5 +89,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rouletteWheel {
-  animation: rouletteWheel 20s ease infinite;
+  animation: rouletteWheel ease infinite;
+  animation-duration: 20s;
 }
