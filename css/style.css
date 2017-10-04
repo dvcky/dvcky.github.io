@@ -10,6 +10,20 @@
     to { opacity:1; } 
 }
 
+@keyframes rouletteWheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate((random(1440) + 360)deg);
+  }
+  100% {
+  }
+}
+
 /* scrollbar */
 ::-webkit-scrollbar { 
     display: none; 
@@ -72,4 +86,8 @@ h1, h2, h3, h4, h5, h6, p {
     color: white;
     font-family: Gidolinya;
     font-size: 18px;
+}
+
+.rouletteWheel {
+  animation: rouletteWheel 20s ease infinite;
 }
