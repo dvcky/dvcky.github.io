@@ -10,7 +10,7 @@
     to { opacity:1; } 
 }
 
-@keyframes rouletteWheel {
+@keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
