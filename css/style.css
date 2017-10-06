@@ -15,7 +15,7 @@
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100% {
+  50% {
     -webkit-transform: rotate(1800deg);
     transform: rotate(1800deg);
   }
