@@ -10,8 +10,12 @@
     to { opacity:1; } 
 }
 
-@keyframes spin {
-  0, 50% {
+@keyframes spin {   
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
