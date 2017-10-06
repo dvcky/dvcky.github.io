@@ -11,7 +11,7 @@
 }
 
 @keyframes spin {
-  0% {
+  0, 50% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rouletteWheel {
-    -webkit-animation:spin 5s ease-out infinite;
-    -moz-animation:spin 5s ease-out infinite;
-    animation:spin 5s ease-out infinite;
+    -webkit-animation:spin 10s ease-out infinite;
+    -moz-animation:spin 10s ease-out infinite;
+    animation:spin 10s ease-out infinite;
 }
