@@ -15,13 +15,13 @@
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  33% {
+  25% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(1800deg);
-    transform: rotate(1800deg);
+    transform: rotate(3600deg);
   }
 }
 
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rouletteWheel {
-    -webkit-animation:spin 15s cubic-bezier(0,0,.2,1) infinite;
-    -moz-animation:spin 15s cubic-bezier(0,0,.2,1) infinite;
-    animation:spin 15s cubic-bezier(0,0,.2,1) infinite;
+    -webkit-animation:spin 20s cubic-bezier(0,0,.2,1) infinite;
+    -moz-animation:spin 20s cubic-bezier(0,0,.2,1) infinite;
+    animation:spin 20s cubic-bezier(0,0,.2,1) infinite;
 }
