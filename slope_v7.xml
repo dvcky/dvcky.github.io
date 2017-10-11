@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Gadget Template" />
+<Content type="html"><![CDATA[
+
+<script src="//https://48395594-a-62cb3a1a-s-sites.googlegroups.com/site/unblockedmv/slope/UnityProgress.js?attachauth=ANoY7coFDm8se8QsNsrMZ4XjweZ2FumE6Q_imx-ylD3pJdsgQPDhY7i-z-LM6uz9fdqqm-A2y0qEkpA4kJCs_DTTPXpYfWKWd-nHRc2TaNprKrEXOWe1KDQWw-cavQCv4YCSlN5dQm6oQye8ZHiebfQuUI2dMMdnjXggw6KOjoY06DK-T8XSF0jQeDIZLRvQqrUNATd391_VaLiJDn65aKBCf5xvBg9t96l642ZI7r7i0o-1fvLfImc%3D&attredirects=0&d=1"></script>
+<script src="//https://48395594-a-62cb3a1a-s-sites.googlegroups.com/site/unblockedmv/slope/UnityLoader.js?attachauth=ANoY7cps8APoy8EHTc_AeIILIMKqmaiNop5Wxg4Ye02WyDUHVU5jiFONxxcWTZEHUJ0ehAySTTm8T2h0yQ_O0ql_DJ1JEkFgQzMNiV-Ae85UCcfqXmWhiJ17uC1ZAlKAkNC8nl651v7LvEZvl6nTGqF_k_rycX3e6AqkxK9yzLc62ufx75oEFhOn3TWYro89Iu93IlBlldHS3QymKCJbkmmOzvjp8J43W9cWB34KAHnUbPvZquk2b_w%3D&attredirects=0&d=1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "//https://48395594-a-62cb3a1a-s-sites.googlegroups.com/site/unblockedmv/slope/slope_v7.json?attachauth=ANoY7cotWU2dQx_xfsivRa6sDEyhkVsmGGF3B4qr2phFCR7xyjvfAikPj6TVdQFC-qMmSQhB0cFhN5HdQnpRvhLPh-679hun57JUzOe-ZHL4pP3UbPTY267UBpURZogPH1ILBdbqpneaXC8DgtP3St9yBaevgQ4GxL-tLdZCk1vdBIZqoIR3CZm6Vnm6taFd9AAnChaNrfhamuW6SfgDzTJ_9nh04zPQFg%3D%3D&attredirects=0&d=1", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+    </script>
+<div class="webgl-content">
+        <div id="gameContainer" style="width: 900px; height: 600px; margin: auto"></div>
+        <div class="footer">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div class="title">Slope</div>
+        </div>
+</div>
+
+]]></Content>
+</Module>
