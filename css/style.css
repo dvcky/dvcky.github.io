@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .rouletteWheel {
-    -webkit-animation:spin 25s cubic-bezier(0,0,.2,1) infinite;
-    -moz-animation:spin 25s cubic-bezier(0,0,.2,1) infinite;
-    animation:spin 25s cubic-bezier(0,0,.2,1) infinite;
+    -webkit-animation:spin 25s cubic-bezier(.35,1,.7,1) infinite;
+    -moz-animation:spin 25s cubic-bezier(.35,1,.7,1) infinite;
+    animation:spin 25s cubic-bezier(.35,1,.7,1) infinite;
 }
