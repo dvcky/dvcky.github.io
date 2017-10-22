@@ -23,7 +23,10 @@
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px white;
-    padding: 20px;
+}
+
+/* refresh class */
+.refresh {
 }
 
 /* a element */
@@ -36,7 +39,7 @@ a {
 body {
     background-image: url(images/joshua-earle-183442.jpg);
     background-size: cover;
-    padding: 20px;
+    margin: 20px;
     animation: background 60s ease infinite;
 }
 
