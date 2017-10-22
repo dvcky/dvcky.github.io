@@ -1,0 +1,48 @@
+/* font */
+@font-face {
+    font-family: Gidolinya;
+    src: url(Gidolinya-Regular.otf);
+}
+
+/* background movement */
+@keyframes background {
+    0% {background-position: 0 0;}
+	50% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+@keyframes refresh {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-60deg);}
+    80% {transform: rotate(420deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* content class */
+.content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+    padding: 20px;
+}
+
+/* a element */
+a {
+    color: lightgray;
+    font-family: Gidolinya;
+}
+
+/* body element */
+body {
+    background-image: url(images/joshua-earle-183442.jpg);
+    background-size: cover;
+    padding: 20px;
+    animation: background 60s ease infinite;
+}
+
+/* h1, h2, h3, h4, h5, h6, and p elements */
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    font-family: Gidolinya;
+    font-size: 18px;
+}
