@@ -16,7 +16,6 @@ a {
 }
 
 body {
-    animation: zoomOut 10s ease forwards;
     background-image: url(images/jonatan-pie-194115.jpg);
     background-position: center;
     background-size: contain;
