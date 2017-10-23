@@ -1,14 +1,6 @@
-/* font */
 @font-face {
     font-family: Gidolinya;
     src: url(Gidolinya-Regular.otf);
-}
-
-/* background movement */
-@keyframes background {
-    0% {background-position: 0 0;}
-	50% {background-position: 100% 100%;}
-    100% {background-position: 0 0;}
 }
 
 @keyframes refresh {
@@ -18,34 +10,42 @@
     100% {transform: rotate(360deg);}
 }
 
-/* content class */
+@keyframes zoomIn {
+    0% {background-size: 100%;}
+	100% {background-size: 600%;}
+}
+
+@keyframes zoomOut {
+    0% {background-size: 600%;}
+	100% {background-size: 100%;}
+}
+
+a {
+    color: lightgray;
+    font-family: Gidolinya;
+}
+
+body {
+    animation: zoomOut 10s ease forwards;
+    background-image: url(images/jonatan-pie-194115.jpg);
+    background-position: center;
+    margin: 20px;
+}
+
+.black {
+    color: black;
+}
+
 .content {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px white;
 }
 
-/* refresh class */
-.refresh {
-}
-
-/* a element */
-a {
-    color: lightgray;
+.gidolinya {
     font-family: Gidolinya;
 }
 
-/* body element */
-body {
-    background-image: url(images/joshua-earle-183442.jpg);
-    background-size: cover;
-    margin: 20px;
-    animation: background 60s ease infinite;
-}
-
-/* h1, h2, h3, h4, h5, h6, and p elements */
-h1, h2, h3, h4, h5, h6, p {
+.white {
     color: white;
-    font-family: Gidolinya;
-    font-size: 18px;
 }
