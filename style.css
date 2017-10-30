@@ -18,7 +18,7 @@ a {
 body {
     background-color: rgb(16,16,16);
     background-size: cover;
-    margin: 20px;
+    margin: 16px;
 }
 
 .black {
@@ -28,6 +28,7 @@ body {
 .content {
     background-color: rgb(8,8,8);
     box-shadow: 0 0 2px lime;
+    margin: 8px;
 }
 
 .gidolinya {
