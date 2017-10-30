@@ -26,7 +26,7 @@ body {
 }
 
 .content {
-    background-color: white;
+    background-color: rgb(16,16,16);
     border-radius: 5px;
     box-shadow: 0 0 10px white;
 }
