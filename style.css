@@ -16,9 +16,8 @@ a {
 }
 
 body {
-    background-image: url(images/jonatan-pie-194115.jpg);
-    background-position: center;
-    background-size: contain;
+    background-color: dimgray;
+    background-size: cover;
     margin: 20px;
 }
 
