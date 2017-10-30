@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    background-color: dimgray;
+    background-color: rgb(128,128,128);
     background-size: cover;
     margin: 20px;
 }
