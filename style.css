@@ -5,6 +5,11 @@
     100% {transform: rotate(360deg);}
 }
 
+body {
+    color: black;
+}
+
 p {
+    color: white;
     font-family: Montserrat;
 }
