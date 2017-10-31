@@ -1,8 +1,8 @@
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-60deg);}
-    80% {transform: rotate(420deg);}
-    100% {transform: rotate(360deg);}
+    80% {transform: rotate(240deg);}
+    100% {transform: rotate(180deg);}
 }
 
 body {
