@@ -9,7 +9,8 @@ body {
     background-color: black;
 }
 
-p {
+h1 {
+    text-align: center;
     color: white;
     font-family: Montserrat;
 }
