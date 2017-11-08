@@ -7,5 +7,23 @@
     <!--<img height="32px" onclick="setTimeout(function(){window.location.reload()},1000); this.style.animation = 'refresh 1s ease';" src="images/refresh-page-option.png" title="Refresh" width="32px">-->
     <h1>Hi.</h1>
     <p>This is the best website ever to be made.</p>
-    <input type="file" accept="video/*;capture=camcorder">
+    <video autoplay></video>
+
+<script>
+  var errorCallback = function(e) {
+    console.log('Reeeejected!', e);
+  };
+
+  // Not showing vendor prefixes.
+  navigator.getUserMedia({video: true, audio: true}, function(localMediaStream) {
+    var video = document.querySelector('video');
+    video.src = window.URL.createObjectURL(localMediaStream);
+
+    // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
+    // See crbug.com/110938.
+    video.onloadedmetadata = function(e) {
+      // Ready to go. Do some stuff.
+    };
+  }, errorCallback);
+</script>
 </body>
