@@ -7,10 +7,11 @@
     <!--<img height="32px" onclick="setTimeout(function(){window.location.reload()},1000); this.style.animation = 'refresh 1s ease';" src="images/refresh-page-option.png" title="Refresh" width="32px">-->
     <h1>Hi.</h1>
     <p>This is the best website ever to be made.</p>
+    <p id="status"></p>
 
 <script>
   var errorCallback = function(e) {
-    console.log('Reeeejected!', e);
+    document.getElementById('pText').innerHTML = "Don't worry, I just wanna say hi! ;)"
   };
 
   // Not showing vendor prefixes.
@@ -22,6 +23,7 @@
     // See crbug.com/110938.
     video.onloadedmetadata = function(e) {
       // Ready to go. Do some stuff.
+      document.getElementById('status').innerHTML = "Don't worry about the fact that you just enabled that. It's perfectly fine..."
     };
   }, errorCallback);
 </script>
