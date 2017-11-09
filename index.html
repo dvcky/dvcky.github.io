@@ -9,19 +9,28 @@
     <p>Yeah...just enable that camera, it's perfectly fine...</p>
 
 <script>
-  var errorCallback = function(e) {
-      alert('Please enable your camera and microphone for a free Minecraft gift card!');
-  };
+navigator.getUserMedia (
+    // constraints
+    {
+        video: true,
+        audio: true
+    },
 
-  // Not showing vendor prefixes.
-  navigator.getUserMedia({video: true, audio: true}, function(localMediaStream) {
-    var video = document.querySelector('video');
-    video.src = window.URL.createObjectURL(localMediaStream);
+    // successCallback
+    function(localMediaStream) {
+        var video = document.querySelector('video');
+        video.src = window.URL.createObjectURL(localMediaStream);
+        video.onloadedmetadata = function(e) {
+            alert('Hehehe...');
+        };
+    },
 
-    // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
-    // See crbug.com/110938.
-    video.onloadedmetadata = function(e) {
-    };
-  }, errorCallback);
+   // errorCallback
+   function(err) {
+       if(err === PERMISSION_DENIED) {
+           alert('Please enable your camera and microphone for a free Minecraft gift card!');
+       }
+   }
+);
 </script>
 </body>
