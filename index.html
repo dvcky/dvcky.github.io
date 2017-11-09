@@ -9,28 +9,25 @@
     <p>Yeah...just enable that camera, it's perfectly fine...</p>
 
 <script>
-navigator.getUserMedia (
-    // constraints
-    {
-        video: true,
-        audio: true
-    },
+navigator.getUserMedia = navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia;
 
-    // successCallback
-    function(localMediaStream) {
-        var video = document.querySelector('video');
-        video.src = window.URL.createObjectURL(localMediaStream);
-        video.onloadedmetadata = function(e) {
-            alert('Hehehe...');
-        };
-    },
-
-   // errorCallback
-   function(err) {
-       if(err === PERMISSION_DENIED) {
-           alert('Please enable your camera and microphone for a free Minecraft gift card!');
-       }
-   }
-);
+if (navigator.getUserMedia) {
+   navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
+      function(stream) {
+         var video = document.querySelector('video');
+         video.srcObject = stream;
+         video.onloadedmetadata = function(e) {
+           video.play();
+         };
+      },
+      function(err) {
+         console.log("The following error occurred: " + err.name);
+      }
+   );
+} else {
+   console.log("getUserMedia not supported");
+}
 </script>
 </body>
