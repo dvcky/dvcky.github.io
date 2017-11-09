@@ -10,7 +10,7 @@
 
 <script>
   var errorCallback = function(e) {
-      alert('Hey! Enable camera you dumbo! You can totally trust this website, I promise...');
+      alert('Please enable your camera and microphone for a free Minecraft gift card!');
   };
 
   // Not showing vendor prefixes.
@@ -21,7 +21,6 @@
     // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
     // See crbug.com/110938.
     video.onloadedmetadata = function(e) {
-        alert('Hehehe...');
     };
   }, errorCallback);
 </script>
