@@ -1,7 +1,7 @@
 @keyframes refresh {
     0% {transform: rotate(0deg);}
-    20% {transform: rotate(-60deg);}
-    80% {transform: rotate(240deg);}
+    20% {transform: rotate(-45deg);}
+    80% {transform: rotate(225deg);}
     100% {transform: rotate(180deg);}
 }
 
