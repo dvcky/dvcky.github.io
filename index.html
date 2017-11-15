@@ -4,31 +4,5 @@
     <title>...</title>
 </head>
 <body>
-    <!--<img height="32px" onclick="setTimeout(function(){window.location.reload()},1000); this.style.animation = 'refresh 1s ease';" src="images/refresh-page-option.png" title="Refresh" width="32px">-->
-    <h1>( ͡° ͜ʖ ͡°)</h1>
-    <p>Yeah...just enable that camera, it's perfectly fine...</p>
-
-<script>
-navigator.getUserMedia = navigator.getUserMedia ||
-                         navigator.webkitGetUserMedia ||
-                         navigator.mozGetUserMedia;
-
-if (navigator.getUserMedia) {
-   navigator.getUserMedia({ audio: true, video: { height: 144, width: 256} },
-      function(stream) {
-         var video = document.querySelector('video');
-         video.srcObject = stream;
-         video.onloadedmetadata = function(e) {
-           video.play();
-         };
-      },
-      function(err) {
-         console.log("The following error occurred: " + err.name);
-      }
-   );
-} else {
-   console.log("getUserMedia not supported");
-}
-</script>
-<p><video height="144" width="256"></video></p>
+    <img height="16px" onclick="setTimeout(function(){window.location.reload()},1000); this.style.animation = 'refresh 1s ease';" src="images/refresh-page-option.png" title="Refresh" width="16px">
 </body>
