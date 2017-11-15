@@ -21,14 +21,14 @@ body {
     background-color: black;
 }
 
-div {
+.div {
     background-color: white;
     opacity: 10%;
     transition: opacity .25s ease;
     -moz-transition: opacity .25s ease;
     -webkit-transition: opacity .25s ease;
 }
-div:hover {
+.div:hover {
     opacity: 100%;
 }
 
