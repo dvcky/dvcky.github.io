@@ -25,13 +25,13 @@ body {
     width: 512px;
     height: 512px;
     background-color: white;
-    opacity: 10%;
-    transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
-    -webkit-transition: opacity .25s ease;
+    opacity: 0.1;
+    transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
 }
 .div:hover {
-    opacity: 100%;
+    opacity: 1;
 }
 
 h1,h2,h3,h4,h5,h6,p {
