@@ -6,9 +6,10 @@
 }
 
 .credit {
-    color: white;
-    right: 0;
     bottom: 0;
+    color: white;
+    position: absolute;
+    right: 0;
 }
 
 body {
