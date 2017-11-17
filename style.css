@@ -11,11 +11,19 @@
     right: 20px;
 }
 
+a {
+    color: lime;
+}
+
 body {
     background-attachment: fixed;
     background-image: url("media/kristopher-roller-110203.jpg");
     background-position: center;
     background-size: cover;
+} bodyp::selection {
+    color: red;
+} p::-moz-selection {
+    color: red;
 }
 
 div {
