@@ -30,9 +30,9 @@ div {
     border-radius: 2px;
     background-color: white;
     opacity: 0.1;
-    transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -webkit-transition: opacity 1s;
+    transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
 }
 div:hover {
     opacity: 0.8;
