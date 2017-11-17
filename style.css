@@ -21,9 +21,9 @@ body {
     background-position: center;
     background-size: cover;
 } bodyp::selection {
-    color: red;
+    background: lime;
 } p::-moz-selection {
-    color: red;
+    background: lime;
 }
 
 div {
