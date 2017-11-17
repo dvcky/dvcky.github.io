@@ -18,7 +18,10 @@
 }
 
 body {
+    background-attachment: fixed;
     background-image: url("media/kristopher-roller-110203.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 div {
