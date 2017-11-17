@@ -13,6 +13,12 @@
 
 a {
     color: lime;
+} a::selection {
+    background: green;
+    color: white;
+} a::-moz-selection {
+    background: green;
+    color: white;
 }
 
 body {
@@ -20,10 +26,6 @@ body {
     background-image: url("media/kristopher-roller-110203.jpg");
     background-position: center;
     background-size: cover;
-} bodyp::selection {
-    background: lime;
-} p::-moz-selection {
-    background: lime;
 }
 
 div {
@@ -37,4 +39,12 @@ div {
     -webkit-transition: opacity 0.8s;
 } div:hover {
     opacity: 0.8;
+}
+
+p::selection {
+    background: lime;
+    color: white;
+} p::-moz-selection {
+    background: lime;
+    color: white;
 }
