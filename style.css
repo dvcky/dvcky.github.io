@@ -19,6 +19,7 @@
 
 .fadeIn1 {
     animation: fadeIn 1s ease-out 0s 1 normal;
+    color: white;
 }
 
 body {
