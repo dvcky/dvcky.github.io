@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -27,7 +29,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url("media/kristopher-roller-110203.jpg");
+    background-image: url('media/kristopher-roller-110203.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +49,6 @@ div {
 }
 
 a,h1,h2,h3,h4,h5,h6,p {
-    font-family: "Monsterrat";
+    font-family: 'Monsterrat';
     text-align: center;
 }
