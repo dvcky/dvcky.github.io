@@ -20,10 +20,10 @@
 }
 
 .fadeIn1 {
-    animation: fadeIn 1s ease-out 1s 1 normal;
+    animation: fadeIn 1s ease-out 1s 1 forwards;
     color: white;
 } .fadeIn2 {
-    animation: fadeIn 1s ease-out 2s 1 normal;
+    animation: fadeIn 1s ease-out 2s 1 forwards;
     color: white;
 }
 
