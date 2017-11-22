@@ -1,9 +1,12 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.gstatic.com/s/montserrat/v12/rBHvpRWBkgyW99dXT88n7yEAvth_LlrfE80CYdSH47w.woff2') format('woff2');
-} @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('https://fonts.gstatic.com/s/montserrat/v12/IQHow_FEYlDC4Gzy_m8fcude9INZm0R8ZMJUtfOsxrw.woff2') format('woff2');
+    src: url('Montserrat-Bold.ttf');
+} @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('Montserrat-Regular.ttf')
+} @font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('Montserrat-Thin.ttf');
 }
 
 @keyframes fadeIn {
@@ -35,15 +38,17 @@
     opacity: 0;
 }
 
-.montserrat {
-    font-family: 'Montserrat';
-} .montserrat-bold {
+.montserrat-bold {
     font-family: 'Montserrat-Bold';
+} .montserrat-regular {
+    font-family: 'Montserrat-Regular';
+} .montserrat-thin {
+    font-family: 'Montserrat-Thin';
 }
 
 body {
     background-attachment: fixed;
-    background-image: url('media/kristopher-roller-110203.jpg');
+    background-image: url('kristopher-roller-110203.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
