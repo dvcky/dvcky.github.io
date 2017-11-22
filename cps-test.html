@@ -1,25 +1,4 @@
-<head>
-    <link rel="icon" type="image/png" href="images/profile.png"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <script src="js/cps-test.js"></script>
-    <title>CPS Test</title>
-</head>
-
-<body background="images/background.jpg" style="background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
-    <div class="menu" id="menu">
-        <a href="/" title="Home"><img src="images/home.png" width="30px" height="30px" style="margin: 5px;"></a>
-        <a href="cps-test.html" title="CPS Test"><img src="images/cursor.png" width="30px" height="30px" style="margin: 5px;"></a>
-        <a href="resources.html" title="Resources"><img src="images/book.png" width="30px" height="30px" style="margin: 5px;"></a>
-    </div>
-    <div class="content" id="content">
-        <h1>CPS Test</h1>
-        <p>Find out how fast you can click with Cole's CPS test! During this test, you will be given 10 seconds to click as fast as you can. Good luck!</p>
-        <h3>What is CPS?</h3>
-        <p>CPS, also an acronym for "Clicks Per Second", is a stat of a sort that shows how fast you can click. This can be helpful when playing a first person shooter game, such as Minecraft, especially during a fight, when timing is of upmost importance.</p>
-        <h3>Why do I need a better CPS?</h3>
-        <p>As I said before, in Minecraft PvP, timing is pretty important. This is important is because it's almost always about who attacks first. When you have a faster CPS than your opponent, you are able to hit sooner than your opponent when they enter your range, not only giving you the first hit, but the tactical advantage as well.</p>
-        <h2><a id="results"></a></h2>
-        <button onClick="onClick(); onStart();" style="padding: 50px 275px" id="status">Click me</button>
-        <p id="status">Clicks: <a id="clicks">0</a> | Stopwatch: <a id="stopwatch">0.00</a></p>
-    </div>
-</body>
+<script src="js/cps-test.js"></script> <!-- Imports script to webpage. -->
+<h2><a id="results"></a></h2> <!-- Displays results at end. -->
+<button onClick="onClick(); onStart();" id="status">Click me</button> <!-- Button to start/count CPS. Button is removed at end. -->
+<p id="status">Clicks: <a id="clicks">0</a> | Stopwatch: <a id="stopwatch">0.00</a></p> <!-- Displays number of clicks and the amount of time elapsed. Stats are removes at end. -->
