@@ -29,6 +29,10 @@
     opacity: 0;
 }
 
+.montserrat {
+    font-family: 'Montserrat';
+}
+
 body {
     background-attachment: fixed;
     background-image: url('media/kristopher-roller-110203.jpg');
@@ -51,6 +55,5 @@ div {
 }
 
 a,h1,h2,h3,h4,h5,h6,p {
-    font-family: 'Montserrat';
     text-align: center;
 }
