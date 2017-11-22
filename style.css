@@ -22,9 +22,11 @@
 .fadeIn1 {
     animation: fadeIn 1s ease-out 1s 1 forwards;
     color: white;
+    opacity: 0;
 } .fadeIn2 {
     animation: fadeIn 1s ease-out 2s 1 forwards;
     color: white;
+    opacity: 0;
 }
 
 body {
@@ -51,5 +53,4 @@ div {
 a,h1,h2,h3,h4,h5,h6,p {
     font-family: 'Montserrat';
     text-align: center;
-    opacity: 0;
 }
