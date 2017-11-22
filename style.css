@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.gstatic.com/s/montserrat/v12/rBHvpRWBkgyW99dXT88n7yEAvth_LlrfE80CYdSH47w.woff2') format('woff2');
+} @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('https://fonts.gstatic.com/s/montserrat/v12/IQHow_FEYlDC4Gzy_m8fcude9INZm0R8ZMJUtfOsxrw.woff2') format('woff2');
+}
 
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -31,6 +37,8 @@
 
 .montserrat {
     font-family: 'Montserrat';
+} .montserrat-bold {
+    font-family: 'Montserrat-Bold';
 }
 
 body {
