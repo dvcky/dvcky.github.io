@@ -31,6 +31,7 @@
 
 .fadeIn1 {
     animation: fadeIn 1s ease-out 1s 1 forwards;
+    animation: rainbow 10s linear forwards;
     color: white;
     opacity: 0;
 } .fadeIn2 {
