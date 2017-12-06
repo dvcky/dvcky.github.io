@@ -5,16 +5,6 @@
     100% {opacity: 1;}
 }
 
-@keyframes rainbow {
-    0% {color: red;}
-    16% {color: orange;}
-    32% {color: yellow;}
-    48% {color: green;}
-    64% {color: blue;}
-    80% {color: purple;}
-    96% {color: red;}
-}
-
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-45deg);}
@@ -24,7 +14,7 @@
 
 .background-image {
     background-image: url('files/kristopher-roller-110203.jpg');
-    background-size: cover;
+    background-size: contain;
     filter: blur(5px);
     height: 100%;
     width: 100%;
