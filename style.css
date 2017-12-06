@@ -22,6 +22,19 @@
     100% {transform: rotate(180deg);}
 }
 
+.background-image {
+    background-attachment: fixed;
+    background-color: black;
+    background-image: url('files/kristopher-roller-110203.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
 .credit {
     bottom: 0;
     font-size: 12px;
@@ -46,14 +59,7 @@
 }
 
 body {
-    background-attachment: fixed;
-    background-color: black;
-    background-image: url('files/kristopher-roller-110203.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     cursor: url('files/dango_cursor_by_mushroma-d56okmj.png'), auto;
-    filter: blur(5px);
 }
 
 div {
