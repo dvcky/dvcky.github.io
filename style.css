@@ -53,6 +53,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     cursor: url('files/dango_cursor_by_mushroma-d56okmj.png'), auto;
+    filter: blur(5px);
 }
 
 div {
