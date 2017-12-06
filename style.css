@@ -34,7 +34,6 @@
     opacity: 0;
 } .fadeIn2 {
     animation: fadeIn 1s ease-out 2s 1 forwards;
-    color: white;
     opacity: 0;
 }
 
