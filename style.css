@@ -43,6 +43,8 @@
 body {
     cursor: url('files/dango_cursor_by_mushroma-d56okmj.png'), auto;
     height: 100%;
+    min-height: 100%;
+    overflow: hidden;
     position: relative;
     width: 100%;
 }
