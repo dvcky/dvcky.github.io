@@ -17,7 +17,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 110%;
+    left: 0;
     position: absolute;
+    top: 0;
     width: 110%;
     z-index: -1;
 }
