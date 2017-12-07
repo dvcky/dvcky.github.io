@@ -6,5 +6,5 @@ bg.addEventListener('mousemove', (e) => {
   const mouseX = e.clientX / windowWidth;
   const mouseY = e.clientY / windowHeight;
   
-  bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+  bg.style.transform = `translate(-${mouseX}%, -${mouseY}%, 0)`;
 });
