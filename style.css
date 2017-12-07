@@ -13,9 +13,6 @@
 }
 
 .background-image {
-    background-image: url('files/kristopher-roller-110203.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 110%;
     left: 0;
     position: absolute;
@@ -41,6 +38,9 @@
 }
 
 body {
+    background-image: url('files/kristopher-roller-110203.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: url('files/dango_cursor_by_mushroma-d56okmj.png'), auto;
     height: 100%;
     min-height: 100%;
