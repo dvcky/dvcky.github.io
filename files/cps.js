@@ -15,7 +15,7 @@ function display(){
         cps = clicks / 10
 	document.getElementById("button").remove();
         document.getElementById("status").remove();
-        document.getElementById("result").innerHTML = "Your average CPS is " + cps + ". <a href='#'>Retry?</a>";
+        document.getElementById("result").innerHTML = "Your average CPS is " + cps + ". <a href='cps.html'>Retry?</a>";
     }
 
     if (deciseconds >= 9) {
