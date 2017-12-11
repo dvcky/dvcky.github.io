@@ -13,8 +13,9 @@ function display(){
     }
     if (isDone) {
         cps = clicks / 10
+	document.getElementById("button").remove();
         document.getElementById("status").remove();
-        document.getElementById("results").innerHTML = "Your average CPS is " + cps;
+        document.getElementById("result").innerHTML = "Your average CPS is " + cps;
     }
 
     if (deciseconds >= 9) {
