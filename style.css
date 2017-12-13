@@ -13,12 +13,13 @@
 }
 
 .background-image {
-    height: 110%;
+    background-image: url('files/kristopher-roller-110203.jpg');
+    height: 100%;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
-    width: 110%;
-    z-index: -1;
+    width: 100%;
+    z-index: 0;
 }
 
 .fadeIn1 {
@@ -38,7 +39,8 @@
 }
 
 body {
-    background-image: url('files/kristopher-roller-110203.jpg');
+    background-color: black;
+    /* background-image: url('files/kristopher-roller-110203.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     cursor: url('files/dango_cursor_by_mushroma-d56okmj.png'), auto;
