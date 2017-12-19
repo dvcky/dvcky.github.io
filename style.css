@@ -12,7 +12,7 @@
     100% {transform: rotate(180deg);}
 }
 
-.background-image {
+#background-image {
     background-image: url('files/kristopher-roller-110203.jpg');
     background-size: cover;
     height: 100vh;
