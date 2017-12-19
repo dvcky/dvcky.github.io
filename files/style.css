@@ -38,6 +38,10 @@
     font-weight: normal;
 }
 
+.rainbow1 {
+    animation: rainbow 1s ease-out 1s 1 forwards;
+}
+
 body {
     background-color: black;
     background-image: url('kristopher-roller-110203.jpg');
