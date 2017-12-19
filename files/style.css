@@ -8,10 +8,10 @@
 @keyframes rainbow {
     0% {color: red;}
     17% {color: orange;}
-    34% {color: yellow;}
-    51% {color: green;}
-    68% {color: blue;}
-    85% {color: purple;}
+    33% {color: yellow;}
+    50% {color: green;}
+    67% {color: blue;}
+    83% {color: purple;}
     100% {color: red;}
 }
 
