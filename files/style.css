@@ -5,6 +5,16 @@
     100% {opacity: 1;}
 }
 
+@keyframes rainbow {
+    0% {color: red;}
+    17% {color: orange;}
+    34% {color: yellow;}
+    51% {color: green;}
+    68% {color: blue;}
+    85% {color: purple;}
+    100% {color: red;}
+}
+
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-45deg);}
