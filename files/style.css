@@ -30,10 +30,10 @@
 
 body {
     background-color: black;
-    background-image: url('files/kristopher-roller-110203.jpg');
+    background-image: url('kristopher-roller-110203.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: url('files/dango_cursor_by_mushroma-d56okmj.png'), auto;
+    cursor: url('dango_cursor_by_mushroma-d56okmj.png'), auto;
     height: 100%;
     min-height: 100%;
     overflow: hidden;
