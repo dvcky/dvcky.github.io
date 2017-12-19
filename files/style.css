@@ -6,13 +6,15 @@
 }
 
 @keyframes rainbow {
-    0% {color: red;}
+    /* 0% {color: red;}
     17% {color: orange;}
     33% {color: yellow;}
     50% {color: green;}
     67% {color: blue;}
     83% {color: purple;}
-    100% {color: red;}
+    100% {color: red;} */
+    0% {color: aqua;}
+    100% {color: deeppink;}
 }
 
 @keyframes refresh {
