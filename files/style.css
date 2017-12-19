@@ -39,7 +39,17 @@
 }
 
 .rainbow1 {
-    animation: rainbow 1s ease-out 1s 1 forwards;
+    animation: rainbow 5s linear 0s infinite forwards;
+} .rainbow2 {
+    animation: rainbow 5s linear 1s infinite forwards;
+} .rainbow3 {
+    animation: rainbow 5s linear 2s infinite forwards;
+} .rainbow4 {
+    animation: rainbow 5s linear 3s infinite forwards;
+} .rainbow5 {
+    animation: rainbow 5s linear 4s infinite forwards;
+} .rainbow6 {
+    animation: rainbow 5s linear 5s infinite forwards;
 }
 
 body {
