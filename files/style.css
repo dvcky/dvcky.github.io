@@ -35,7 +35,7 @@
 }
 
 body {
-    animation: sharpen 2s linear 0s 1 forwards;
+    animation: sharpen 4s linear 0s 1 forwards;
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
