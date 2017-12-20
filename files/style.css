@@ -34,6 +34,10 @@
     font-weight: normal;
 }
 
+.preload {
+    opacity: 0;
+}
+
 body {
     animation: sharpen 4s linear 0s 1 forwards;
     background-color: black;
