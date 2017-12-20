@@ -5,19 +5,6 @@
     100% {opacity: 1;}
 }
 
-@keyframes rainbow {
-    /* 0% {color: red;}
-    17% {color: orange;}
-    33% {color: yellow;}
-    50% {color: green;}
-    67% {color: blue;}
-    83% {color: purple;}
-    100% {color: red;} */
-    0% {color: turquoise;}
-    50% {color: hotpink;}
-    100% {color: turquoise;}
-}
-
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-45deg);}
@@ -41,28 +28,6 @@
     font-weight: normal;
 }
 
-.rainbow1 {
-    animation: rainbow 10s linear 0s infinite forwards;
-} .rainbow2 {
-    animation: rainbow 10s linear 1s infinite forwards;
-} .rainbow3 {
-    animation: rainbow 10s linear 2s infinite forwards;
-} .rainbow4 {
-    animation: rainbow 10s linear 3s infinite forwards;
-} .rainbow5 {
-    animation: rainbow 10s linear 4s infinite forwards;
-} .rainbow6 {
-    animation: rainbow 10s linear 5s infinite forwards;
-} .rainbow7 {
-    animation: rainbow 10s linear 6s infinite forwards;
-} .rainbow8 {
-    animation: rainbow 10s linear 7s infinite forwards;
-} .rainbow9 {
-    animation: rainbow 10s linear 8s infinite forwards;
-} .rainbow10 {
-    animation: rainbow 10s linear 9s infinite forwards;
-}
-
 body {
     background-color: black;
     background-image: url('kristopher-roller-110203.jpg');
@@ -77,5 +42,7 @@ body {
 }
 
 a,h1,h2,h3,h4,h5,h6,p {
+    color: white;
     text-align: center;
+    text-shadow: 0 0 2px white;
 }
