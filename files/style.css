@@ -13,16 +13,16 @@
 }
 
 @keyframes sharpen {
-    0% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(10px);}
-    90% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(10px);}
+    0% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(20px);}
+    50% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(20px);}
     100% {background-image:url(kristopher-roller-110203.jpg); filter: blur(0px);}
 }
 
 .fadeIn1 {
-    animation: fadeIn 1s ease-out 1s 1 forwards;
+    animation: fadeIn 1s ease-out 2s 1 forwards;
     opacity: 0;
 } .fadeIn2 {
-    animation: fadeIn 1s ease-out 2s 1 forwards;
+    animation: fadeIn 1s ease-out 3s 1 forwards;
     opacity: 0;
 }
 
@@ -35,7 +35,7 @@
 }
 
 body {
-    animation: sharpen 10s ease-out 0s 1 forwards;
+    animation: sharpen 2s ease-out 0s 1 forwards;
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
