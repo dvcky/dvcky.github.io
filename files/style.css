@@ -13,8 +13,8 @@
 }
 
 @keyframes sharpen {
-    0% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(20px);}
-    50% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(20px);}
+    0% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(40px);}
+    50% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(40px);}
     100% {background-image:url(kristopher-roller-110203.jpg); filter: blur(0px);}
 }
 
