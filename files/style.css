@@ -12,6 +12,11 @@
     100% {transform: rotate(180deg);}
 }
 
+@keyframes sharpen {
+    0% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(10px);}
+    100% {background-image:url(kristopher-roller-110203.jpg); filter: blur(0px);}
+}
+
 .fadeIn1 {
     animation: fadeIn 1s ease-out 1s 1 forwards;
     opacity: 0;
