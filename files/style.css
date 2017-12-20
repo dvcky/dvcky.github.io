@@ -6,7 +6,7 @@
 }
 
 @keyframes preload{
-    0%{background-image:url(kristopher-roller-110203.jpg);}
+    0% {background-image:url(kristopher-roller-110203.jpg);}
 }
 
 @keyframes refresh {
