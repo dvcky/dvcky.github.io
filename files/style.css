@@ -13,9 +13,9 @@
     67% {color: blue;}
     83% {color: purple;}
     100% {color: red;} */
-    0% {color: aqua;}
-    50% {color: deeppink;}
-    100% {color: aqua;}
+    0% {color: turquoise;}
+    50% {color: hotpink;}
+    100% {color: turquoise;}
 }
 
 @keyframes refresh {
