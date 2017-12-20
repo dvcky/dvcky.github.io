@@ -6,8 +6,7 @@
 }
 
 @keyframes color {
-    0% {color: cyan; text-shadow: 0 0 4px cyan;}
-    50% {color: magenta; text-shadow: 0 0 4px magenta;}
+    0% {color: magenta; text-shadow: 0 0 40px magenta;}
     100% {color: cyan; text-shadow: 0 0 4px cyan;}
 }
 
