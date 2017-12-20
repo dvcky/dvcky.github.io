@@ -48,3 +48,10 @@ h1 {
     text-align: center;
     text-shadow: 0 0 4px white;
 }
+
+h2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 0 2px white;
+}
