@@ -42,25 +42,25 @@
 }
 
 .rainbow1 {
-    animation: rainbow 0.5s linear 0s infinite forwards;
+    animation: rainbow 10s linear 0s infinite forwards;
 } .rainbow2 {
-    animation: rainbow 0.5s linear 0.05s infinite forwards;
+    animation: rainbow 10s linear 1s infinite forwards;
 } .rainbow3 {
-    animation: rainbow 0.5s linear 0.1s infinite forwards;
+    animation: rainbow 10s linear 2s infinite forwards;
 } .rainbow4 {
-    animation: rainbow 0.5s linear 0.15s infinite forwards;
+    animation: rainbow 10s linear 3s infinite forwards;
 } .rainbow5 {
-    animation: rainbow 0.5s linear 0.2s infinite forwards;
+    animation: rainbow 10s linear 4s infinite forwards;
 } .rainbow6 {
-    animation: rainbow 0.5s linear 0.25s infinite forwards;
+    animation: rainbow 10s linear 5s infinite forwards;
 } .rainbow7 {
-    animation: rainbow 0.5s linear 0.3s infinite forwards;
+    animation: rainbow 10s linear 6s infinite forwards;
 } .rainbow8 {
-    animation: rainbow 0.5s linear 0.35s infinite forwards;
+    animation: rainbow 10s linear 7s infinite forwards;
 } .rainbow9 {
-    animation: rainbow 0.5s linear 0.4s infinite forwards;
+    animation: rainbow 10s linear 8s infinite forwards;
 } .rainbow10 {
-    animation: rainbow 0.5s linear 0.45s infinite forwards;
+    animation: rainbow 10s linear 9s infinite forwards;
 }
 
 body {
