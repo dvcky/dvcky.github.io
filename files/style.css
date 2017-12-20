@@ -5,6 +5,10 @@
     100% {opacity: 1;}
 }
 
+@keyframes preload{
+    0%{background-image:url(kristopher-roller-110203.jpg);}
+}
+
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-45deg);}
