@@ -5,10 +5,6 @@
     100% {opacity: 1;}
 }
 
-@keyframes preload{
-    0% {background-image:url(kristopher-roller-110203.jpg);}
-}
-
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-45deg);}
@@ -23,10 +19,10 @@
 }
 
 .fadeIn1 {
-    animation: fadeIn 1s ease-out 2s 1 forwards;
+    animation: fadeIn 1s ease-out 4s 1 forwards;
     opacity: 0;
 } .fadeIn2 {
-    animation: fadeIn 1s ease-out 3s 1 forwards;
+    animation: fadeIn 1s ease-out 5s 1 forwards;
     opacity: 0;
 }
 
@@ -39,7 +35,6 @@
 }
 
 body {
-    animation: preload 1s;
     animation: sharpen 4s linear 0s 1 forwards;
     background-color: black;
     background-repeat: no-repeat;
