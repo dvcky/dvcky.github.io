@@ -5,12 +5,6 @@
     100% {opacity: 1;}
 }
 
-@keyframes color {
-    0% {color: cyan; text-shadow: 0 0 4px cyan;}
-    50% {color: magenta; text-shadow: 0 0 40px magenta;}
-    100% {color: cyan; text-shadow: 0 0 4px cyan;}
-}
-
 @keyframes refresh {
     0% {transform: rotate(0deg);}
     20% {transform: rotate(-45deg);}
@@ -43,19 +37,7 @@
 .preload {
     height: 0;
     opacity: 0;
-    width: 0;
-}
-
-.color1 {
-    animation: color 0.5s linear 0s infinite forwards;
-} .color2 {
-    animation: color 0.5s linear 0.1s infinite forwards;
-} .color3 {
-    animation: color 0.5s linear 0.2s infinite forwards;
-} .color4 {
-    animation: color 0.5s linear 0.3s infinite forwards;
-} .color5 {
-    animation: color 0.5s linear 0.4s infinite forwards;
+    width: 1px;
 }
 
 body {
