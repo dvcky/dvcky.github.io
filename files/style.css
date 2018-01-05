@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 @keyframes rainbow{
   0%{background-position-x:0}
   to{background-position-x:10240px}
@@ -17,35 +12,9 @@
     100% {transform: rotate(180deg);}
 }
 
-@keyframes sharpen {
-    0% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(80px);}
-    50% {background-image:url(kristopher-roller-110203-scaled.jpg); filter: blur(80px);}
-    100% {background-image:url(kristopher-roller-110203.jpg); filter: blur(0px);}
-}
-
-.fadeIn1 {
-    animation: fadeIn 1s ease-out 4s 1 forwards;
-    opacity: 0;
-} .fadeIn2 {
-    animation: fadeIn 1s ease-out 5s 1 forwards;
-    opacity: 0;
-}
-
-.montserrat-bold {
+.rainbow{
     font-family: 'Montserrat';
     font-weight: bold;
-} .montserrat-regular {
-    font-family: 'Montserrat';
-    font-weight: normal;
-}
-
-.preload {
-    height: 0;
-    opacity: 0;
-    width: 1px;
-}
-
-.rainbow{
   font-size: 64px;
   color:transparent;
   background:linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
@@ -59,23 +28,9 @@ body {
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: url('dango_cursor_by_mushroma-d56okmj.png'), auto;
     height: 100%;
     min-height: 100%;
     overflow: hidden;
     position: relative;
     width: 100%;
-}
-
-.h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 0 0 4px white;
-}
-
-h2 {
-    color: white;
-    font-size: 32px;
-    text-align: center;
-    text-shadow: 0 0 2px white;
 }
