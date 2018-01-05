@@ -15,12 +15,13 @@
 .rainbow{
     font-family: 'Montserrat';
     font-weight: bold;
-  font-size: 64px;
+  font-size: 88px;
   color:transparent;
   background:linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
   background-size:1024px 100%;
   animation:rainbow 35s linear infinite;
   -webkit-background-clip:text;
+  text-align: center;
 }
 
 body {
