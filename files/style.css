@@ -47,6 +47,7 @@
 
 .rainbow{
   font-family: 'Montserrat';
+  font-size: 64px;
   color:transparent;
   background:linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
   background-size:1024px 100%;
@@ -69,7 +70,6 @@ body {
 
 h1 {
     color: white;
-    font-size: 64px;
     text-align: center;
     text-shadow: 0 0 4px white;
 }
