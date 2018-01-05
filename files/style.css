@@ -46,7 +46,6 @@
 }
 
 .rainbow{
-  font-family: 'Montserrat';
   font-size: 64px;
   color:transparent;
   background:linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
