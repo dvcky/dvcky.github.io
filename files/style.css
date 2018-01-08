@@ -22,6 +22,7 @@
   animation:rainbow 35s linear infinite;
   -webkit-background-clip:text;
   text-align: center;
+  text-shadow: 0 0 16px transparent;
 }
 
 body {
