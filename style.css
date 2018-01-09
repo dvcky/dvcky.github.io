@@ -13,24 +13,17 @@
 }
 
 .rainbow {
-    animation:       rainbow 32s linear infinite;
-    background:      linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
-    background-clip: text;
+    animation: rainbow 32s linear infinite;
+    background: linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
+    -webkit-background-clip: text;
     background-size: 1024px 100%;
-    color:           transparent;
-    font-size:       128px;
-    text-align:      center;
+    color: transparent;
+    font-size: 128px;
+    text-align: center;
 }
 
 body {
-    animation: sharpen 4s linear 0s 1 forwards;
     background-color: black;
-    background-image: url('kristopher-roller-110203.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
 }
