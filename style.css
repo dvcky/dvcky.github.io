@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 @keyframes title {
-    0% {color: #ef32d9;}
-    50% {color: #89fffd;}
-    100% {color: #ef32d9;}
+    0% {color: aqua;}
+    50% {color: magenta;}
+    100% {color: aqua;}
 }
 
 @keyframes refresh {
@@ -13,9 +13,10 @@
     100% {transform: rotate(180deg);}
 }
 
-.title {
+.title1 {
     animation: title 10s linear infinite;
-}
+} .title2 [
+
 
 body {
     background-color: black;
