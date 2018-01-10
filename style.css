@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-@keyframes rainbow{
-  0%{background-position-x:0}
-  to{background-position-x:10240px}
+@keyframes title {
+    0% {color: #4e54c8;}
+    50% {color: #89fffd;}
+    100% {color: #4e54c8;}
 }
 
 @keyframes refresh {
@@ -12,16 +13,8 @@
     100% {transform: rotate(180deg);}
 }
 
-.rainbow {
-    animation: rainbow 32s linear infinite;
-    background: linear-gradient(270deg,#1e5799,#2ce0bf,#76dd2c,#dba62b,#ff1493,#1e5799);
-    -webkit-background-clip: text;
-    background-size: 1024px 100%;
-    color: transparent;
-    font-family: 'Montserrat';
-    font-size: 128px;
-    font-weight: 700;
-    text-align: center;
+.title {
+    animation: title 10s linear infinite;
 }
 
 body {
@@ -29,4 +22,10 @@ body {
     background-image: url('images/jeremy-thomas-99326.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: 'Montserrat';
+    font-weight: 700;
 }
