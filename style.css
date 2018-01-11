@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 @keyframes title {
-    0% {color: magenta;}
-    50% {color: aqua;}
-    100% {color: magenta;}
+    0% {color: magenta; text-shadow: 0 0 8px magenta;}
+    50% {color: aqua; text-shadow: 0 0 8px aqua;}
+    100% {color: magenta; text-shadow: 0 0 8px magenta;}
 }
 
 @keyframes refresh {
