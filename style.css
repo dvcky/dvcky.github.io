@@ -19,34 +19,34 @@
 }
 
 .title1 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.0s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.0s infinite;
     opacity: 0;
 } .title2 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.1s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.1s infinite;
     opacity: 0;
 } .title3 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.2s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.2s infinite;
     opacity: 0;
 } .title4 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.3s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.3s infinite;
     opacity: 0;
 } .title5 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.4s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.4s infinite;
     opacity: 0;
 } .title6 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.5s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.5s infinite;
     opacity: 0;
 } .title7 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.6s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.6s infinite;
     opacity: 0;
 } .title8 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.7s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.7s infinite;
     opacity: 0;
 } .title9 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.8s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.8s infinite;
     opacity: 0;
 } .title10 {
-    animation: fadeIn 1s linear 1s, title 6s linear 0.9s infinite;
+    animation: fadeIn 1s linear 1s forwards, title 6s linear 0.9s infinite;
     opacity: 0;
 }
 
