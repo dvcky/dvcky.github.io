@@ -12,7 +12,7 @@
 }
 
 .fadeIn {
-    animation: fadeIn 1s linear 1s forwards, title 1s linear 0s infinite;
+    animation: fadeIn 1s linear 1s forwards, glow 1s linear 0s infinite;
     opacity: 0;
 }
 
