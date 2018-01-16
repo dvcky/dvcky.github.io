@@ -22,8 +22,8 @@
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 1s linear 1s forwards, glow 16s linear 0s infinite;
-            animation: fadeIn 1s linear 1s forwards, glow 16s linear 0s infinite;
+    -webkit-animation: fadeIn 1s linear 1s forwards, glow 8s linear 0s infinite;
+            animation: fadeIn 1s linear 1s forwards, glow 8s linear 0s infinite;
     opacity: 0;
 }
 
