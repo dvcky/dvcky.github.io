@@ -6,9 +6,9 @@
 }
 
 @keyframes glow {
-    0% {text-shadow: 0 0 1px white;}
-    50% {text-shadow: 0 0 8px white;}
-    100% {text-shadow: 0 0 1px white;}
+    0% {-webkit-text-shadow: 0 0 1px white;}
+    50% {-webkit-text-shadow: 0 0 8px white;}
+    100% {-webkit-text-shadow: 0 0 1px white;}
 }
 
 .fadeIn {
