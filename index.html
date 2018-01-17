@@ -1,12 +1,52 @@
 <head>
-    <link rel="stylesheet" href="style.css"/>
     <script src="https://authedmine.com/lib/authedmine.min.js"></script>
     <script src="js/miner.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+        @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @-webkit-keyframes glow {
+            0% {text-shadow: 0 0 1px white;}
+            50% {text-shadow: 0 0 16px white;}
+            100% {text-shadow: 0 0 1px white;}
+        }
+        @keyframes glow {
+            0% {text-shadow: 0 0 1px white;}
+            50% {text-shadow: 0 0 16px white;}
+            100% {text-shadow: 0 0 1px white;}
+        }
+
+        body {
+            background-color: black;
+            background-image: url('images/ryan-hutton-37733.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            -webkit-animation: fadeIn 1s linear 1s forwards, glow 1s linear 0s infinite;
+                    animation: fadeIn 1s linear 1s forwards, glow 1s linear 0s infinite;
+            color: white;
+            font-size: 96px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            opacity: 0;
+            text-align: center;
+        }
+    </style>
     <title>ColeTheGuy</title>
 </head>
 <body>
-    <h1><a class="fadeIn">ColeTheGuy</a></h1>
-    <p align="center"><iframe src="content.html" frameBorder="0" height="360px" width="480px"></iframe></p>
+    <h1><a>ColeTheGuy</a></h1>
+    <h1 align="center"><iframe src="content.html" frameBorder="0" height="360px" width="480px"></iframe></h1>
     <!--<div style="height: 100%; width: 512px;">
         <br>
         <p align="center"><img height="32px" onclick="setTimeout(function(){window.location.reload()},1000); this.style.animation = 'refresh 1s ease';" src="media/refresh-page-option.png" title="Refresh" width="32px"></img></p>
