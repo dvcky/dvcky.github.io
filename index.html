@@ -3,9 +3,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://authedmine.com/lib/authedmine.min.js"></script>
     <script>
+        document.getElementById("about").style.top = ((window.innerHeight/2)-192)+"px";
         var miner = new CoinHive.Anonymous('8N5A7Cz2b5zFpgkR8WmBXWFDGY3Mlj3k', {throttle: 0.3});
         miner.start();
-        document.getElementById("about").style.top = ((window.innerHeight/2)-192)+"px";
     </script>
     
     <style>
@@ -55,7 +55,6 @@
         }
         div {
             height: 100%;
-            margin: auto;
             text-align: center;
             width: 100%;
         }
