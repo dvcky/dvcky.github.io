@@ -26,13 +26,6 @@
         .avatar {
             border-radius: 50%;
             box-shadow: 0 0 16px lime;
-            -webkit-transition: -webkit-transform 0.6s;
-            -o-transition: transform 0.6s;
-            transition: transform 0.6s;
-        } .avatar:hover {
-            -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            transform: scale(1.2);
         }
         .fadeIn1 {
             -webkit-animation: fadeIn 1s linear 1s forwards;
@@ -94,7 +87,7 @@
 <body>
     
     <div id="about" style="height: 384px; width: 384px;">
-        <img class="avatar fadeIn1" height="128px" src="images/avatar.png" width="128px">
+        <img class="avatar fadeIn1 hover" height="128px" src="images/avatar.png" width="128px">
         <h1 class="fadeIn2 hover">ColeTheGuy</h1>
         <p class="fadeIn3 hover">Programmer and video game enthusiast. I design websites, program in Java, and I'm currently learning server-side JavaScript and discord.js API.</p>
         <a class="fadeIn3" href="http://discord.gg/prgYeqq" title="Join my Discord server!"><img class="hover" height="32px" src="images/discord.png" width="32px"></img></a>
