@@ -26,6 +26,7 @@ body {
     top: 50%;
     left: 50%;
     overflow: hidden;
+    position: absolute;
 }
 button {
     background-color: white;
