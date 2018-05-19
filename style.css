@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+.about {
+    transform: translate(-50%, -50%);
+}
+
 .avatar {
     border-radius: 50%;
     box-shadow: 0 0 16px lime;
@@ -19,10 +23,8 @@ body {
     background-image: url('images/kristopher-roller-110203.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 }
 button {
