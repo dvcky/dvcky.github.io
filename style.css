@@ -25,6 +25,7 @@ body {
     background-image: url('images/kristopher-roller-110203.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
     overflow: hidden;
 }
 button {
