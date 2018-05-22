@@ -3,6 +3,7 @@
 .about {
     margin: auto;
     height: 144px;
+    padding: 0;
     position: absolute;
     width: 256px;
 }
