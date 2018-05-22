@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 .about {
-    width: 50%;
+    position: absolute;
     transform: translate(-50%, -50%);
 }
 
