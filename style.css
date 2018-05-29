@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-.about {
+.content {
     position: absolute;
     margin: auto;
     top: 0;
@@ -8,23 +8,12 @@
     bottom: 0;
     left: 0;
     height: 360px;
-    padding: 0;
     width: 480px;
 }
 
 .avatar {
     border-radius: 50%;
-    box-shadow: 0 0 16px lime;
-}
-.hover {
-    -webkit-transition: -webkit-transform 0.6s;
-    -o-transition: transform 0.6s;
-    transition: transform 0.6s;
-}
-.hover:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    box-shadow: 0 0 16px white;
 }
 body {
     background-color: black;
@@ -32,16 +21,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-}
-button {
-    background-color: white;
-    color: black;
-    border: none;
-    font-family: 'Montserrat';
-    padding: 16px 32px;
-}
-button:hover {
-    background-color: lightgray;
 }
 div {
     height: 100%;
@@ -56,6 +35,8 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
     font-family: 'Montserrat';
     font-weight: 700;
+    margin: 0;
+    padding: 4px;
     text-shadow: 0 0 8px white;
 }
 p {
@@ -63,5 +44,7 @@ p {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 12px;
+    margin: 0;
+    padding: 4px;
     text-shadow: 0 0 1px white;
 }
