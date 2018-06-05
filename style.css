@@ -4,7 +4,12 @@
     
 }
 
-.content {
+.avatar {
+    border-radius: 50%;
+    box-shadow: 0 0 16px white;
+}
+
+.center {
     position: absolute;
     margin: auto;
     top: 0;
@@ -15,10 +20,6 @@
     width: 480px;
 }
 
-.avatar {
-    border-radius: 50%;
-    box-shadow: 0 0 16px white;
-}
 body {
     background-color: black;
     background-image: url('images/kristopher-roller-110203.jpg');
@@ -41,7 +42,6 @@ button {
 } button:hover {
     background-color: rgba(255,255,255,0.2);
 }
-
 
 div {
     height: 100%;
