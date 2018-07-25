@@ -37,7 +37,7 @@
     },
     "size": {
       "value": 3,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 0,
