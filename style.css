@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
 #center {
     left: 50%;
     position: absolute;
@@ -16,4 +21,5 @@
 
 p {
     color: white;
+    font-family: Montserrat-Bold;
 }
