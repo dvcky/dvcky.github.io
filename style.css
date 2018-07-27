@@ -20,7 +20,12 @@
     width: 100%;
 }
 
-p {
+h2 {
     color: white;
     font-family: Montserrat-Bold;
+}
+
+p {
+    color: white;
+    font-family: Montserrat-Regular;
 }
