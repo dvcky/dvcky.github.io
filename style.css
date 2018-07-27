@@ -3,6 +3,11 @@
     src: url('fonts/Montserrat-Bold.ttf');
 }
 
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
 #center {
     left: 50%;
     position: absolute;
