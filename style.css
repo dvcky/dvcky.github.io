@@ -25,17 +25,15 @@
     width: 100%;
 }
 
-* {
-    margin: 4px;
-}
-
 h2 {
     color: white;
     font-family: Montserrat-Bold;
+    margin: 4px;
 }
 
 p {
     color: white;
     font-family: Montserrat-Regular;
     font-size: 12px;
+    margin: 4px;
 }
