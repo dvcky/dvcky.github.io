@@ -46,9 +46,9 @@
             <h1>ColeTheGuy</h1>
             <p>im a mystery man.</p>
             <p><br></p>
-            <select onchange="window.open(this.value);">
-                <option disabled="disabled" title="Some neat clothing that I like." selected="selected">Apparel</option>
-                <option style="background-color:midnightblue;" title="Spacey boi stuff" value="https://www.intotheam.com/">INTO THE AM</option>
+            <select onchange="if(this.value!=''){window.open(this.value);}">
+                <option title="Wear some kew" selected="selected">Cool Apparel</option>
+                <option style="background:linear-gradient(to right,red,orange,yellow,green,cyan,blue,violet);" title="Spacey boi stuff" value="https://www.intotheam.com/">INTO THE AM</option>
                 <option style="background-color:deepskyblue;" title="Kitty boi stuff" value="https://leonkarssen.com/">Leon Karssen</option>
                 <option style="background-color:white;color:black;"title="Camera boi stuff" value="https://www.polaroid.com/products/category/style/apparel/">Polaroid</span></option>
             </select>
