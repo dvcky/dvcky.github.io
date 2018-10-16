@@ -7,8 +7,11 @@
             }
             
             @keyframes leonkarssen {
-                from {transform: rotate(0deg)rotate(0deg);background-position: 0px 0px;}
-                from {transform: rotate(360deg)rotate(-360deg);background-position: 32px 32px;}
+                0% {background-position: 0px 0px;}
+                25% {background-position: -32px 32px;}
+                50% {background-position: -64px 0px;}
+                75% {background-position: -32px -32px;}
+                100% {background-position: 0px 0px;}      
             }
             
             .center {
@@ -28,8 +31,6 @@
                 border-radius: 2px;
                 height: 32px;
                 width: 128px
-            } .leonkarssen:hover {
-                animation-play-state: paused;
             }
             
             a {
