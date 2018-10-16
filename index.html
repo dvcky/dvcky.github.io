@@ -14,6 +14,12 @@
                 top: 50%;
             }
             
+            .select {
+                background: linear-gradient(to right,red,orange,yellow,green,cyan,blue,violet);
+            } .select select {
+                background: transparent;
+            }
+            
             a {
                 color: lime;
             }
@@ -51,13 +57,15 @@
             <h1>ColeTheGuy</h1>
             <p>im a mystery man.</p>
             <p><br></p>
-            <select onchange="if(this.value!=''){window.open(this.value);}">
-                <option style="background: url(''),linear-gradient(top, #444444, #999999);" title="Wear some kewl stuff." selected="selected" value="">Clothing</option>
-                <option style="background-color:white;color:white;" title="Kitty boi stuff" value="http://www.keystreet.co/">Key Street</option>
-                <option style="background-color:cyan;color:white;" title="Kitty boi stuff" value="https://leonkarssen.com/">Leon Karssen</option>
-                <option style="background-color:white;color:black;" title="Camera boi stuff" value="https://www.polaroid.com/products/category/style/apparel/">Polaroid</option>
-                <option style="background-color:white;color:black;" title="Spacey boi stuff" value="https://www.intotheam.com/">INTO THE AM</option>
-            </select>
+            <div class="select">
+                <select onchange="if(this.value!=''){window.open(this.value);}">
+                    <option style="background: url(''),linear-gradient(top, #444444, #999999);" title="Wear some kewl stuff." selected="selected" value="">Clothing</option>
+                    <option style="background-color:white;color:white;" title="Kitty boi stuff" value="http://www.keystreet.co/">Key Street</option>
+                    <option style="background-color:cyan;color:white;" title="Kitty boi stuff" value="https://leonkarssen.com/">Leon Karssen</option>
+                    <option style="background-color:white;color:black;" title="Camera boi stuff" value="https://www.polaroid.com/products/category/style/apparel/">Polaroid</option>
+                    <option style="background-color:white;color:black;" title="Spacey boi stuff" value="https://www.intotheam.com/">INTO THE AM</option>
+                </select>
+            </div>
             <p><br><br><br></p>
             <p><a href="https://www.instagram.com/coletheguy_/">Instagram</a> | <a href="https://twitter.com/coletheguy_/">Twitter</a></p>
         </div>
