@@ -8,7 +8,7 @@
             
             @keyframes leonkarssen {
                 from {background-position: 0px 0px;}
-                from {background-position: 32px 32px;}
+                from {background-position: -64px 32px;}
             }
             
             .center {
@@ -20,15 +20,14 @@
             }
             
             .leonkarssen {
-                animation: leonkarssen 2s linear infinite;
+                animation: leonkarssen 1s linear infinite;
                 background-image: url('/images/leonkarssen.png');
                 background-repeat: repeat;
                 background-size: 16px 16px;
                 height: 32px;
-                transition: 1s;
                 width: 128px
             } .leonkarssen:hover {
-                animation: leonkarssen 1s linear infinite;
+                animation-play-state: paused;
             }
             
             a {
