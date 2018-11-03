@@ -6,10 +6,10 @@
     left: 50%;
     position: absolute;
     text-align: center;
-    top: 45%;
-    -webkit-transform: translate(-50%, 0%);
-    -ms-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
+    top: 50%;
+    -webkit-transform: translate(-128px, 0);
+    -ms-transform: translate(-128px, 0);
+    transform: translate(-128px, 0);
 }
 
 a {
