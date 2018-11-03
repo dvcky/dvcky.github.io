@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+.center {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: lime;
+}
+
+body {
+     background-color: black;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    color: white;
+    font-family: courier;
+}
+
+option {
+    border: none;
+}
+
+p {
+    color: cyan;
+    font-size: 12px;
+}
+
+select {
+    background-color: black;
+    border: none;
+    color: white;
+}
