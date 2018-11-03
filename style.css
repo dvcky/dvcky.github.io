@@ -7,9 +7,9 @@
     position: absolute;
     text-align: center;
     top: 50%;
-    -webkit-transform: translate(-128px, 0);
-    -ms-transform: translate(-128px, 0);
-    transform: translate(-128px, 0);
+    -webkit-transform: translate(-50%, -128px);
+    -ms-transform: translate(-50%, -128px);
+    transform: translate(-50%, -128px);
 }
 
 a {
