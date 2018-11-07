@@ -1,3 +1,8 @@
+@keyframes background {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-128px);}
+}
+
 * {
     margin: 0;
 }
@@ -18,7 +23,9 @@ a {
 }
 
 body {
-    background: black url("images/stars.png") repeat fixed;
+    animation: background 4s infinite, background 2s infinite;
+    background: black url("images/background.png") repeat fixed 0% 0%, url("images/background.png") repeat fixed 25% 25%;
+    opacity: 50%, 100%;
 }
 
 h1,h2,h3,h4,h5,h6,p {
