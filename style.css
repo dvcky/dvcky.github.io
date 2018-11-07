@@ -23,7 +23,7 @@ a {
 }
 
 body {
-    animation: background 2s infinite;
+    animation: background 8s linear infinite;
     background: black url("images/background.png") repeat fixed;
 }
 
