@@ -23,8 +23,8 @@ a {
 }
 
 body {
-    animation: background 4s infinite, background 2s infinite;
-    background: black url("images/background.png") repeat fixed 0% 0%, url("images/background.png") repeat fixed 25% 25%;
+    animation: background 2s infinite;
+    background: black url("images/background.png") repeat fixed;
 }
 
 h1,h2,h3,h4,h5,h6,p {
