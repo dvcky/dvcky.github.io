@@ -24,7 +24,7 @@ a {
 
 body {
     animation: background 8s linear infinite;
-    background: black url("images/background.png") repeat fixed;
+    background: black url("images/background.gif") repeat fixed;
 }
 
 h1,h2,h3,h4,h5,h6,p {
