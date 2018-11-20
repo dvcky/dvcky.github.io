@@ -1,12 +1,17 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/contentheight.js"></script>
         <title>Ducky</title>
     </head>
 
-    <body class="index">
+    <body class="index" onload="detectContentHeight();">
         <div class="center">
-            <iframe src="home.html"></iframe>
+            <h1>Ducky</h1>
+            <p>Quack quack.</p>
+            <p><br><br><br></p>
+            <embed class="content" src="home.html"></embed>
         </div>
     </body>
 </html>
