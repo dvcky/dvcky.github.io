@@ -15,14 +15,18 @@
     -webkit-transform: translate(-50%, -128px);
     -ms-transform: translate(-50%, -128px);
     transform: translate(-50%, -128px);
-    width: 512px;
+}
+
+.page {
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
 }
 
 a {
     color: lime;
 }
 
-body {
+body.index {
     animation: background 8s linear infinite;
     background: black url("images/background.gif") repeat fixed;
 }
@@ -32,17 +36,11 @@ h1,h2,h3,h4,h5,h6,p {
     font-family: courier;
 }
 
-option {
+iframe {
     border: none;
 }
 
 p {
     color: cyan;
     font-size: 12px;
-}
-
-select {
-    background-color: black;
-    border: none;
-    color: white;
 }
