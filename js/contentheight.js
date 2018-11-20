@@ -1,7 +1,7 @@
 function detectContentHeight() {
     setInterval(function(){
         var topOfContent = $('.content').offset().top;
-        var bottomOfWindow = $(window).height();
+        var bottomOfWindow = $(document).height();
         
         var contentHeight = bottomOfWindow - topOfContent;
         
