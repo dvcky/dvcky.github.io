@@ -16,7 +16,7 @@
     -webkit-transform: translate(-50%, -128px);
     -ms-transform: translate(-50%, -128px);
     transform: translate(-50%, -128px);
-    width: 384px;
+    width: 512px;
 }
 
 a {
@@ -30,6 +30,7 @@ body.index {
 
 embed {
     border: none;
+    width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6,p {
