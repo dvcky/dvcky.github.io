@@ -1,14 +1,19 @@
+function clear() {
+    location.reload();
+}
+
 function help() {
-    console.log(`[DKY] COMMAND LIST:`);
-    console.log(`[DKY] help()            - Shows all commands and explains them.`);
-    console.log(`[DKY] getImageData(url) - Gets image filename, width, and height.`);
+    console.log(`COMMAND LIST:`);
+    console.log(`clear()           - Clears console.`);
+    console.log(`help()            - Shows all commands and explains them.`);
+    console.log(`getImageData(url) - Gets image filename, width, and height.`);
 }
 
 function getImageData(url) {
     var img = new Image();
     img.src = url;
 
-    console.log(`[DKY] Loading image data...`);
+    console.log(`Loading image data...`);
     
     img.onload = function(){
         
@@ -16,11 +21,11 @@ function getImageData(url) {
         var height   = img.height;
         var width    = img.width;
         
-        console.log(`[DKY] Image Data loaded!`);
-        console.log(`[DKY] Filename: ` + filename);
-        console.log(`[DKY] Width:    ` + width);
-        console.log(`[DKY] Height:   ` + height);
+        console.log(`Image Data loaded! Variables saved.`);
+        console.log(`filename: ` + filename);
+        console.log(`width:    ` + width);
+        console.log(`height:   ` + height);
     };
 }
 
-console.log(`[DKY] Ducky's Console is running! Type 'help()' for commands.`);
+console.log(`Ducky's Console script is running! Type 'help()' for commands.`);
