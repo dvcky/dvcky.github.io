@@ -27,6 +27,11 @@ function getImageData(url) {
         console.log(`filename: ` + filename);
         console.log(`width:    ` + width);
         console.log(`height:   ` + height);
+        
+        document.getElementById("image").src = url;
+        document.getElementById("link").innerHTML = filename;
+        document.getElementById("link").href = url;
+        document.getElementById("resolution").innerHTML = width + " x " + height;
     };
 }
 
