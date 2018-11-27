@@ -6,7 +6,7 @@ function help() {
     console.log(`COMMAND LIST:`);
     console.log(`clear()           - Clears console.`);
     console.log(`help()            - Shows all commands and explains them.`);
-    console.log(`getImageData(url) - Gets image filename, width, and height.`);
+    console.log(`getImageData('url') - Gets image filename, width, and height.`);
 }
 
 function getImageData(url) {
