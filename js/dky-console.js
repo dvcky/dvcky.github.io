@@ -22,6 +22,8 @@ function getImageData(url) {
         var width    = img.width;
         
         console.log(`Image Data loaded! Variables saved.`);
+        console.log(`--------[VARIABLES]--------`);
+        console.log(`url:      ` + url);
         console.log(`filename: ` + filename);
         console.log(`width:    ` + width);
         console.log(`height:   ` + height);
