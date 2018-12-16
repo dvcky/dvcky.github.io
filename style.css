@@ -3,6 +3,16 @@
     to {background-position: 0 128px;}
 }
 
+@keyframes rainbow {
+    00.00% {color: rgb(255, 0, 0);}
+    16.66% {color: rgb(255, 255, 0);}
+    33.33% {color: rgb(0, 255, 0);}
+    50.00% {color: rgb(0, 255, 255);}
+    66.66% {color: rgb(0, 0, 255);}
+    83.33% {color: rgb(255, 0, 255);}
+    100.0% {color: rgb(255, 0, 0);}
+}
+
 * {
     margin: 0;
 }
@@ -20,12 +30,13 @@
 }
 
 a {
+    animation: rainbow 1s linear infinite;
     color: lime;
 }
 
 body.index {
     animation: background 8s linear infinite;
-    background: black url("img/background.gif") repeat fixed;
+    background: black url("img/background2.gif") repeat fixed;
 }
 
 embed {
