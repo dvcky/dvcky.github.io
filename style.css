@@ -1,6 +1,6 @@
 @keyframes background {
     from {background-position: 0 0;}
-    to {background-position: 1024px 64px;}
+    to {background-position: 1024px 128px;}
 }
 
 @keyframes rainbow {
