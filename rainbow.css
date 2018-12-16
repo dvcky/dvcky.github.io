@@ -19,11 +19,11 @@
 
 @-webkit-keyframes rainbowScroll{
     from{background-position: 0%;}
-    to{background-position: 100%;}
+    to{background-position: 256px;}
 }
 @keyframes rainbowScroll{
     from{background-position: 0%;}
-    to{background-position: 100%;}
+    to{background-position: 256px;}
 }
 
 .rainbowFade {
