@@ -29,10 +29,6 @@
     width: 512px;
 }
 
-.rainbow {
-    animation: rainbow 3s linear infinite;
-}
-
 a {
     color: lime;
 }
