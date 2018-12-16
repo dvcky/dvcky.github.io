@@ -18,8 +18,8 @@
 }
 
 @-webkit-keyframes rainbowScroll{
-    from{background-position: 0 0;}
-    to{background-position: 100% 0;}
+    from{background-position: 0%;}
+    to{background-position: 100%;}
 }
 @keyframes rainbowScroll{
     from{background-position: 0%;}
