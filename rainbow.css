@@ -1,3 +1,8 @@
+:root {
+    --rainbowLength: 256px;
+    --rainbowSpeed: 1s;
+}
+
 @-webkit-keyframes rainbowFade {
     00.00% {color: rgb(255, 0, 0);}
     16.66% {color: rgb(255, 255, 0);}
@@ -19,21 +24,21 @@
 
 @-webkit-keyframes rainbowScroll{
     from{background-position: 0%;}
-    to{background-position: 256px;}
+    to{background-position: var(--rainbowLength);}
 }
 @keyframes rainbowScroll{
     from{background-position: 0%;}
-    to{background-position: 256px;}
+    to{background-position: var(--rainbowLength);}
 }
 
 .rainbowFade {
-    -webkit-animation: rainbowFade 1s linear infinite;
-    animation: rainbowFade 1s linear infinite;
+    -webkit-animation: rainbowFade var(--rainbowSpeed) linear infinite;
+    animation: rainbowFade var(--rainbowSpeed) linear infinite;
 }
 
 .rainbowScroll {
-    -webkit-animation: rainbowScroll 1s linear infinite;
-    animation: rainbowScroll 1s linear infinite;
+    -webkit-animation: rainbowScroll var(--rainbowSpeed) linear infinite;
+    animation: rainbowScroll var(--rainbowSpeed) linear infinite;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: -webkit-gradient(
