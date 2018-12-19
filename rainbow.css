@@ -42,24 +42,28 @@
     -webkit-background-clip: text;
     background-clip: text;
     background-image: -webkit-gradient(
-        linear, left top, right top,
-        color-stop(0,#f00),
-        color-stop(0.17,#ff0),
-        color-stop(0.33,#0f0),
-        color-stop(0.50,#0ff),
-        color-stop(0.67,#00f),
-        color-stop(0.83,#f0f),
-        color-stop(1.00,#f00)
+        linear, 
+        left top, 
+        right top, 
+        rgb(255, 0, 0), 
+        rgb(255, 255, 0), 
+        rgb(0, 255, 0), 
+        rgb(0, 255, 255), 
+        rgb(0, 0, 255), 
+        rgb(255, 0, 255), 
+        rgb(255, 0, 0);
     );
     background-image: gradient(
-        linear, left top, right top,
-        color-stop(0,#f00),
-        color-stop(0.17,#ff0),
-        color-stop(0.33,#0f0),
-        color-stop(0.50,#0ff),
-        color-stop(0.67,#00f),
-        color-stop(0.83,#f0f),
-        color-stop(1.00,#f00)
+        linear, 
+        left top, 
+        right top, 
+        rgb(255, 0, 0), 
+        rgb(255, 255, 0), 
+        rgb(0, 255, 0), 
+        rgb(0, 255, 255), 
+        rgb(0, 0, 255), 
+        rgb(255, 0, 255), 
+        rgb(255, 0, 0);
     );
     background-size: 256px 100%;
     color:transparent;
