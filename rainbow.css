@@ -65,6 +65,6 @@
         rgb(255, 0, 255), 
         rgb(255, 0, 0)
     );
-    background-size: 256px 100%;
+    background-size: var(--rainbowLength) 100%;
     color:transparent;
 }
