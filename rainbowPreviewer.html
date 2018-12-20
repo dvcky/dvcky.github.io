@@ -2,6 +2,15 @@
     <head>
         <link rel="stylesheet" type="text/css" href="rainbow.css">
         <script>
+            function copyConfig() {
+                var rainbowLength = document.getElementById("rainbowLength").value;
+                var rainbowSpeed = document.getElementById("rainbowSpeed").value;
+                var rainbowConfig = `<script>document.documentElement.style.setProperty("--rainbowLength", ` + rainbowLength + ` + "px");document.documentElement.style.setProperty("--rainbowSpeed", ` + rainbowSpeed + ` + "s");</script>`;
+                
+                rainbowConfig.select();
+                document.execCommand("copy");
+                alert("Code copied! Paste inside the header element of your website, and then your rainbows should be configured to your liking! :)");
+            }
             function previewRainbow() {
                 var rainbowLength = document.getElementById("rainbowLength").value;
                 var rainbowSpeed = document.getElementById("rainbowSpeed").value;
@@ -14,7 +23,7 @@
     <body>
         <h2><b>Rainbow.css config previewer</b></h2>
         <p>&#60;script&#62;<br>&nbsp; &nbsp; document.documentElement.style.setProperty("--rainbowLength", "<input type="text" id="rainbowLength" value="256">px");<br>&nbsp; &nbsp; document.documentElement.style.setProperty("--rainbowSpeed", "<input type="text" id="rainbowSpeed" value="1">s");<br>&#60;&#47;script&#62;</p>
-        <button onclick="previewRainbow()">Preview code:</button>
+        <button onclick="copyConfig()">Copy code:</button><button onclick="previewRainbow()">Preview code:</button>
         <p class="rainbowScroll"><b>RAINBOW PREVIEW</b></p>
     </body>
 <html>
