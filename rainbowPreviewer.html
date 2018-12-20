@@ -5,7 +5,7 @@
             function copyConfig() {
                 var rainbowLength = document.getElementById("rainbowLength").value;
                 var rainbowSpeed = document.getElementById("rainbowSpeed").value;
-                var rainbowConfig = '<script>document.documentElement.style.setProperty("--rainbowLength", ' + rainbowLength + ' + "px");document.documentElement.style.setProperty("--rainbowSpeed", ' + rainbowSpeed + ' + "s");</script>';
+                var rainbowConfig = "<script>document.documentElement.style.setProperty('--rainbowLength', " + rainbowLength + " + 'px');document.documentElement.style.setProperty('--rainbowSpeed', " + rainbowSpeed + " + 's');</script>";
                 
                 rainbowConfig.select();
                 document.execCommand("copy");
