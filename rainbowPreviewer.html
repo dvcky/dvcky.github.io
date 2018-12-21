@@ -5,10 +5,15 @@
             function copyConfig() {
                 var rainbowLength = document.getElementById("rainbowLength").value;
                 var rainbowSpeed = document.getElementById("rainbowSpeed").value;
-                var rainbowConfig = "&#60;script&#62;document.documentElement.style.setProperty('--rainbowLength', " + rainbowLength + " + 'px');document.documentElement.style.setProperty('--rainbowSpeed', " + rainbowSpeed + " + 's');&#60;&#47;script&#62;";
                 
+                var rainbowConfig = document.createElement(´Input´);
+                rainbowConfig.setAttribute(`value`, `clipboard test`);
+                
+                document.body.appendChild(rainbowConfig);
                 rainbowConfig.select();
                 document.execCommand("copy");
+                rainbowConfig.parentNode.removeChild(rainbowConfig);
+                
                 alert("Code copied! Paste inside the header element of your website, and then your rainbows should be configured to your liking! :)");
             }
             function previewRainbow() {
