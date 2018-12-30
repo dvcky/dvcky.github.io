@@ -2,20 +2,6 @@
     <head>
         <link rel="stylesheet" type="text/css" href="rainbow.css">
         <script>
-            function copyConfig() {
-                var rainbowLength = document.getElementById("rainbowLength").value;
-                var rainbowSpeed = document.getElementById("rainbowSpeed").value;
-                
-                var rainbowConfig = document.createElement(´Input´);
-                rainbowConfig.setAttribute(´value´, ´clipboard test´);
-                
-                document.body.appendChild(rainbowConfig);
-                rainbowConfig.select();
-                document.execCommand("copy");
-                rainbowConfig.parentNode.removeChild(rainbowConfig);
-                
-                alert("Code copied! Paste inside the header element of your website, and then your rainbows should be configured to your liking! :)");
-            }
             function previewRainbow() {
                 var rainbowLength = document.getElementById("rainbowLength").value;
                 var rainbowSpeed = document.getElementById("rainbowSpeed").value;
