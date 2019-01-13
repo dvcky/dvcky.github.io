@@ -1,13 +1,29 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="rainbow.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../rainbow.css">
+        <script>
+            document.documentElement.style.setProperty("--rainbowLength", "2048px");
+            document.documentElement.style.setProperty("--rainbowSpeed", "2s");
+        </script>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
         <title>TAC Archive</title>
     </head>
     <body>
-        <h1>The TAC Archive</h1>
-        <p>This is the official archive of "The Abandoned Cat", which was a fanfiction created by Galaxy from a Discord server that was known as "SoloCord". The story follows two Characters based on people from said server named SoloEclipze (Tiffany) and Valocarus (Noah). Tiffany seems to have been cursed, and turned into a cat. Noah finds her and takes her into his care. Do they find a way to reverse the curse? Does Noah like Tiffany, and does Tiffany feel the same way? Well, I guess you'll have to read it to find out! ;)</p>
+        <h1 class="rainbowScroll">The TAC Archive</h1>
+        <p>This is the official archive of "The Abandoned Cat", which was a fanfiction created by Galaxy from a Discord server that was known as "SoloCord". The story follows two Characters based on people from said server named <span onmouseover="document.getElementById('tiffany').style.display='block';" onmouseout="document.getElementById('tiffany').style.display='none';" style="color:magenta;">SoloEclipze (Tiffany)</span> and <span onmouseover="document.getElementById('noah').style.display='block';" onmouseout="document.getElementById('noah').style.display='none';" style="color:magenta;">Valocarus (Noah)</span>. Tiffany seems to have been cursed, and turned into a cat. Noah finds her and takes her into his care. Do they find a way to reverse the curse? Does Noah like Tiffany, and does Tiffany feel the same way? Well, I guess you'll have to read it to find out! ;)</p>
         <br>
-        <p>- <a href="The_Abandoned_Cat_PART_1_FOR_VALO_AND_SOLO.txt">PART 1</a><br>- <a href="The_Abandoned_Cat_PART_2_FOR_VALO_AND_SOLO.txt">PART 2</a><br>- <a href="The_Abandoned_Cat_PART_3_FOR_VALO_AND_SOLO.txt">PART 3</a><br>- <a href="The_Abandoned_Cat_PART_4_FOR_VALO_AND_SOLO.txt">PART 4</a><br>- <a href="The_Abandoned_Cat_PART_5_FOR_VALO_AND_SOLO.txt">PART 5</a><br>- <a href="The_Abandoned_Cat_PART_6_FOR_VALO_AND_SOLO.txt">PART 6</a></p>
+        <p>- <a class="rainbowFade" href="The_Abandoned_Cat_PART_1_FOR_VALO_AND_SOLO.txt" style="animation-delay: 0.2s;">PART 1</a><br>
+           - <a class="rainbowFade" href="The_Abandoned_Cat_PART_2_FOR_VALO_AND_SOLO.txt" style="animation-delay: 0.4s;">PART 2</a><br>
+           - <a class="rainbowFade" href="The_Abandoned_Cat_PART_3_FOR_VALO_AND_SOLO.txt" style="animation-delay: 0.6s;">PART 3</a><br>
+           - <a class="rainbowFade" href="The_Abandoned_Cat_PART_4_FOR_VALO_AND_SOLO.txt" style="animation-delay: 0.8s;">PART 4</a><br>
+           - <a class="rainbowFade" href="The_Abandoned_Cat_PART_5_FOR_VALO_AND_SOLO.txt" style="animation-delay: 1.0s;">PART 5</a><br>
+           - <a class="rainbowFade" href="The_Abandoned_Cat_PART_6_FOR_VALO_AND_SOLO.txt" style="animation-delay: 1.2s;">PART 6</a></p>
+        <img id="tiffany" src="DChRgT9XsAEX0-d.jpg" style="border-radius:1%; display:none;" width="192px"></img>
+        <img id="noah" src="C-oOOdHXsAAMcIw.jpg" style="border-radius:1%; display:none;" width="192px"></img>
     </body>
 </html>
