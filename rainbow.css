@@ -24,11 +24,11 @@
 
 @-webkit-keyframes rainbowScroll{
     from{background-position: 0%;}
-    to{background-position: var(--rainbowLength);}
+    to{background-position: calc(var(--rainbowLength) * -1);}
 }
 @keyframes rainbowScroll{
     from{background-position: 0%;}
-    to{background-position: var(--rainbowLength);}
+    to{background-position: calc(var(--rainbowLength) * -1);}
 }
 
 .rainbowFade {
