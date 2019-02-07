@@ -15,9 +15,7 @@
 
 @keyframes wiggle {
     00.00% {transform: rotate(-24deg);}
-    25.00% {transform: rotate(0deg);}
     50.00% {transform: rotate(24deg);}
-    75.00% {transform: rotate(0deg);}
     100.0% {transform: rotate(-24deg);}
 }
 
@@ -38,7 +36,7 @@
 }
 
 .wiggle {
-    animation: wiggle 4s ease-in-out infinite;
+    animation: wiggle 8s linear infinite;
 }
 
 a {
