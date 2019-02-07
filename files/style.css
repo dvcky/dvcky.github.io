@@ -13,9 +13,12 @@
     100.0% {color: rgb(255, 0, 0);}
 }
 
-@keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+@keyframes wiggle {
+    00.00% {transform: rotate(-24deg);}
+    25.00% {transform: rotate(0deg);}
+    50.00% {transform: rotate(24deg);}
+    75.00% {transform: rotate(0deg);}
+    100.0% {transform: rotate(-24deg);}
 }
 
 * {
@@ -34,8 +37,8 @@
     width: 512px;
 }
 
-.spin {
-    animation: spin 16s linear infinite;
+.wiggle {
+    animation: wiggle 4s ease-in-out infinite;
 }
 
 a {
