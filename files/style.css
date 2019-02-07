@@ -14,9 +14,9 @@
 }
 
 @keyframes wiggle {
-    00.00% {transform: rotate(-24deg);}
-    50.00% {transform: rotate(24deg);}
-    100.0% {transform: rotate(-24deg);}
+    00.00% {transform: rotate(-12deg);}
+    50.00% {transform: rotate(12deg);}
+    100.0% {transform: rotate(-12deg);}
 }
 
 * {
