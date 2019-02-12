@@ -1,17 +1,36 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="files/rainbow.css">
-        <link rel="stylesheet" type="text/css" href="files/style.css">
-        <script src="files/jquery-2.2.4.min.js"></script>
-        <script src="files/contentHeight.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/rainbow.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/setContentHeight.js"></script>
         <title>Ducky</title>
     </head>
 
-    <body class="index" onload="detectContentHeight();">
-        <div class="center">
-            <img class="wiggle" src="files/ducky.png" style="border-radius:50%; height:64px; width:64px;"></img>
-            <p><br><br><br></p>
-            <embed class="content" src="home.html"></embed>
+    <body onload="setContentHeight();">
+        <div class="center" id="center" style="background-color: rgba(0,0,0,0.8);">
+            <img class="wiggle" src="media/ducky.png" style="border-radius:50%; height:64px; width:64px;"></img>
+            <div class="content" id="content">
+                <div id="home">
+                    <p><a class="rainbowScroll" name="home">Home</a> | <a href="#page1">Page 1</a> | <a href="#page2">Page 2</a></p>
+                    <br>
+                    <p>Yeah...ducky doin' a big remodel again. Click other lonks for more info.</p>
+                    <p align="center"><button onclick="document.getElementById('video').muted = false; document.getElementById('video').volume = 0.24; document.getElementById('video').play(); this.remove();" style="background-color:black; color:white;">&#x2764;</button></p>
+                    <video id="video" height="65%" width="100%" loop>
+                        <source type="video/mp4" src="media/peaceandtranquility.mp4">
+                    </video>
+                </div>
+                <div id="page1">
+                    <p><a href="#home">Home</a> | <a class="rainbowScroll" name="page1">Page 1</a> | <a href="#page2">Page 2</a></p>
+                    <br>
+                    <p>Why? well cuz i big bored and it was kinda messy. Also you can click on all the pages, hat kid still dances and plays music in the background while you browse :3</p>
+                </div>
+                <div id="page2">
+                    <p><a href="#home">Home</a> | <a href="#page1">Page 1</a> | <a class="rainbowScroll" name="page2">Page 2</a></p>
+                    <br>
+                    <p>This is because (as you can probably see so far), all pages are preloaded on the website as anchors, so everything is super duper quick. Isn't that fun?! :D</p>
+                </div>
+                
+            </div>
         </div>
     </body>
 </html>
