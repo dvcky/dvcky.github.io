@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Ducky&#39;s personal hub for information and resources."
+		/>
+		<meta name="theme-color" content="#FCD303" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="media/favicon.png" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Ducky</title>
+
+		<script>
+			window.addEventListener(
+				"hashchange",
+				function () {
+					switchPage(window.location.hash.substr(1));
+				},
+				false
+			);
+
+			function fade(elm, val, dur) {
+				return (animation = elm.animate(
+					{
+						opacity: val,
+					},
+					{
+						duration: dur,
+						easing: "ease",
+						fill: "forwards",
+					}
+				));
+			}
+			function glide(elm, val, dur) {
+				return (animation = elm.animate(
+					{
+						height: val,
+					},
+					{
+						duration: dur,
+						easing: "ease",
+						fill: "forwards",
+					}
+				));
+			}
+
+			function switchPage(page) {
+				var pageElem = document.getElementById(page);
+				var pageContainer = document.getElementById("pageContainer");
+				if (
+					getComputedStyle(pageElem).height !=
+					getComputedStyle(pageContainer).height
+				) {
+					var pages = document.getElementsByClassName("page");
+					var animation = fade(pageContainer, 0, 300);
+
+					animation.addEventListener("finish", (event) => {
+						for (var i = 0; i < pages.length; ++i) {
+							if (pages[i].id != page) {
+								pages[i].style.height = 0;
+							} else {
+								pages[i].style.height = "";
+							}
+						}
+						var animation2 = glide(
+							pageContainer,
+							getComputedStyle(pageElem).height,
+							300
+						);
+
+						animation2.addEventListener("finish", (event) => {
+							var animation3 = fade(pageContainer, 1, 300);
+						});
+					});
+				}
+			}
+		</script>
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="🍃 ~ Ducky ~ 🐣" />
+		<meta
+			property="og:description"
+			content="Ducky&#39;s personal hub for information and resources."
+		/>
+	</head>
+	<body onload="switchPage(window.location.hash.substr(1));">
+		<div class="center">
+			<div class="nav">
+				<p>
+					yeeeeup |
+					<a href="#projects">Projects</a> |
+					<a href="#resources">Resources</a>
+					|
+					<a href="#about">About</a>
+				</p>
+			</div>
+			<img
+				src="media/day.gif"
+				style="display: block; width: 50%; padding-bottom: 0; margin: 0"
+			/>
+			<p style="text-align: center"><i>drifting off...</i></p>
+			<div id="pageContainer">
+				<div class="page" id="about">
+					<p>reesesh</p>
+				</div>
+				<div class="page" id="resources">
+					<p>dsfifdsh</p>
+				</div>
+				<div class="page" id="projects">
+					<p>recvvifesh</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

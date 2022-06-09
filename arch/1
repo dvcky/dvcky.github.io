@@ -1,0 +1,30 @@
+#!/bin/sh
+read -p "Loaded Dvcky QAI1!"
+timedatectl set-ntp true
+fdisk -l
+read -p "Enter drive to install arch here: " drive
+fdisk $drive
+fdisk -l $drive
+read -p "Enter boot partition: " boot
+read -p "Enter linux partition: " linux
+mkfs.fat -F32 $boot
+mkfs.ext4 $linux
+mount $linux /mnt
+mkdir /mnt/boot
+mount $boot /mnt/boot
+if (whiptail --yesno "Would you like to mount a seperate home partition?" 8 32); then
+	fdisk -l
+	read -p "Choose drive with the home folder: " homedrive
+	fdisk $homedrive
+	fdisk -l $homedrive
+	read -p "Enter home partition: " homepart
+	mkfs.ext4 $homepart
+	mkdir /mnt/home
+	mount $homepart /mnt/home
+fi
+pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers nano
+genfstab -U /mnt >> /mnt/etc/fstab
+rm 1
+curl -Lo 2 dvcky.github.io/arch/2
+mv 2 /mnt/2
+arch-chroot /mnt sh 2
