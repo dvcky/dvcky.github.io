@@ -22,7 +22,7 @@ if (whiptail --yesno "Would you like to mount a seperate home partition?" 8 32);
 	mkdir /mnt/home
 	mount $homepart /mnt/home
 fi
-pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers nano
+pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers vim
 genfstab -U /mnt >> /mnt/etc/fstab
 rm 1
 curl -Lo 2 dvcky.github.io/arch/2
