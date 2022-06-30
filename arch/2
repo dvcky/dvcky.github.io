@@ -24,7 +24,7 @@ passwd
 
 #DOWNLOAD BASE SYSTEM PACKAGES
 pacman -S archlinux-keyring
-pacman -S alacritty blueman bspwm btop curl efibootmgr feh git gparted grub gvfs gvfs-mtp l3afpad lightdm lightdm-gtk-greeter mpv network-manager-applet noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib pavucontrol polkit-gnome polybar pulseaudio pulseaudio-bluetooth sudo sxhkd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ttf-nerd-fonts-symbols tumbler unrar xarchiver xdg-user-dirs xorg-server
+pacman -S alacritty blueman bspwm btop curl dmenu efibootmgr feh git gparted grub gvfs gvfs-mtp l3afpad lightdm lightdm-gtk-greeter mpv network-manager-applet noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib pavucontrol picom polkit-gnome polybar pulseaudio pulseaudio-bluetooth sudo sxhkd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ttf-nerd-fonts-symbols tumbler unrar xarchiver xdg-user-dirs xorg-server
 #pacman -S ark bluedevil breeze-gtk curl dolphin drkonqi efibootmgr ffmpegthumbs git grub gwenview icoutils kde-gtk-config kdeplasma-addons khotkeys konsole kvantum-qt5 kwallet-pam kwrite kwrited mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor powerdevil pulseaudio pulseaudio-bluetooth sddm-kcm unrar sudo ttf-nerd-fonts-symbols xdg-desktop-portal-kde xdg-user-dirs xorg-server
 #VM STUFF: qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat edk2-ovmf
 
@@ -39,7 +39,7 @@ sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j8\"/" /etc/makepkg.conf
 
 #ENABLE MULTILIB REPO AND UPDATE
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-pacman -Syyu
+pacman -Syyu lib32-fontconfig
 
 #CREATE USER
 echo --CREATE NORMAL USER--
