@@ -7,11 +7,15 @@ fdisk $drive
 fdisk -l $drive
 read -p "Enter boot partition: " boot
 read -p "Enter linux partition: " linux
+
+cryptsetup -y -v luksFormat $linux
+cryptsetup open $linux root
+mkfs.ext4 /dev/mapper/root
+mount /dev/mapper/root /mnt
+
 mkfs.fat -F32 $boot
-mkfs.ext4 $linux
-mount $linux /mnt
-mkdir /mnt/boot
-mount $boot /mnt/boot
+mount --mkdir $boot /mnt/boot
+
 if (whiptail --yesno "Would you like to mount a seperate home partition?" 8 32); then
 	fdisk -l
 	read -p "Choose drive with the home folder: " homedrive
@@ -34,7 +38,7 @@ do
         mkdir /mnt$newmount
         mount $newpart /mnt$newmount
 done
-pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers vim
+pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers nano
 genfstab -U /mnt >> /mnt/etc/fstab
 rm 1
 curl -Lo 2 dvcky.github.io/arch/2
