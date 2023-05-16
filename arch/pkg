@@ -62,8 +62,12 @@ plasma-nm
 # AUDIO
 pipewire
 pipewire-pulse
+pipewire-jack
+wireplumber
 plasma-pa
 easyeffects
+
+phonon-qt5-vlc
 
 plasma-systemmonitor
 
