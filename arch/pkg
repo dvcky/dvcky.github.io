@@ -1,1 +1,78 @@
-celluloid curl evince file-roller gdm gedit git gnome-control-center gnome-shell gnome-system-monitor gnome-terminal gnome-tweaks gthumb nautilus networkmanager networkmanager-openvpn noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra pacman-contrib xdg-user-dirs
+# ARCHIVE
+ark
+unrar
+p7zip
+
+breeze-gtk
+
+curl
+
+# FILE EXPLORER
+dolphin
+ffmpegthumbs
+kdegraphics-thumbnailers
+icoutils
+
+konsole
+
+drkonqi
+
+efibootmgr
+
+git
+
+# IMAGE VIEWER
+gwenview
+kimageformats
+qt5-imageformats
+
+kde-gtk-config
+
+kdeplasma-addons
+
+khotkeys
+
+kvantum
+
+kwallet-pam
+
+kwrite
+
+kwrited
+
+mpv
+
+# FONTS
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+ttf-nerd-fonts-symbols-mono
+
+# NVIDIA
+nvidia-open
+nvidia-settings
+
+partitionmanager
+
+plasma-desktop
+
+plasma-nm
+
+# AUDIO
+pipewire
+pipewire-pulse
+plasma-pa
+easyeffects
+
+plasma-systemmonitor
+
+powerdevil
+
+sddm-kcm
+
+sudo
+
+# DESKTOP PORTAL
+xdg-desktop-portal
+xdg-desktop-portal-kde
