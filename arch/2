@@ -2,7 +2,7 @@
 echo Running chroot, loaded DvckyQAI2!
 
 #SET TIMEZONE AND CLOCK
-ln -sf /usr/share/zoneinfo/US/Central /etc/localtime
+ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 hwclock --systohc
 
 #SET LOCALE
@@ -13,33 +13,22 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 #SET SYSTEM NAME
 echo "arch" >> /etc/hostname
 
-#SET HOST FILE
-echo "127.0.0.1 localhost" > /etc/hosts
-echo "::1       localhost" >> /etc/hosts
-echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
-
 #EDIT ROOT USER
 echo --SET ROOT USER PASSWORD--
 passwd
 
-#DOWNLOAD BASE SYSTEM PACKAGES
-pacman -S archlinux-keyring
-pacman -S alacritty blueman bspwm btop curl dmenu dunst efibootmgr feh git gparted grub gvfs gvfs-mtp l3afpad lightdm lightdm-gtk-greeter mpv network-manager-applet noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib pavucontrol picom polkit-gnome polybar pulseaudio pulseaudio-bluetooth sudo sxhkd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ttf-hack ttf-nerd-fonts-symbols tumbler unrar xarchiver xdg-user-dirs xorg-server
+#ENABLE MULTILIB REPO AND UPDATE
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+pacman -Syyu archlinux-keyring
+
+# DOWNLOAD PACKAGES
+pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau pipewire lib32-pipewire wireplumber qpwgraph pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack phonon-qt5-gstreamer ark bluedevil breeze-gtk discover dolphin drkonqi gwenview kde-gtk-config kdegraphics-thumbnailers kdeplasma-addons khotkeys konsole kwrite kwrited kscreen kvantum kwallet-pam partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor plasma-wayland-session powerdevil sddm-kcm spectacle xdg-desktop-portal-kde docker easyeffects efibootmgr ffmpegthumbs firefox flatpak git icoutils keepassxc lutris lsp-plugins-lv2 mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra steam sudo syncthing ttf-cascadia-code-nerd ttf-nerd-fonts-symbols unrar
+#pacman -S alacritty blueman bspwm btop curl dmenu dunst efibootmgr feh git gparted grub gvfs gvfs-mtp l3afpad lightdm lightdm-gtk-greeter mpv network-manager-applet noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib pavucontrol picom polkit-gnome polybar pulseaudio pulseaudio-bluetooth sudo sxhkd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ttf-hack ttf-nerd-fonts-symbols tumbler unrar xarchiver xdg-user-dirs xorg-server
 #pacman -S ark bluedevil breeze-gtk curl dolphin drkonqi efibootmgr ffmpegthumbs git grub gwenview icoutils kde-gtk-config kdeplasma-addons khotkeys konsole kvantum-qt5 kwallet-pam kwrite kwrited mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor powerdevil pulseaudio pulseaudio-bluetooth sddm-kcm unrar sudo ttf-nerd-fonts-symbols xdg-desktop-portal-kde xdg-user-dirs xorg-server
 #VM STUFF: qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat edk2-ovmf
 
-#DOWNLOAD AND CONFIGURE FONTS
-#curl -Lo seguiemj.ttf https://github.com/Vyshnav2255/Windows-11-Emojis-on-Linux/raw/main/seguiemj.ttf
-#mv seguiemj.ttf /usr/share/fonts/TTF/
-#curl -Lo local.conf dvcky.github.io/arch/fontconfig
-#mv local.conf /etc/fonts/
-
 #ADD MORE CORES TO MAKEPKG
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j8\"/" /etc/makepkg.conf
-
-#ENABLE MULTILIB REPO AND UPDATE
-sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-pacman -Syyu lib32-fontconfig
 
 #CREATE USER
 echo --CREATE NORMAL USER--
@@ -51,21 +40,8 @@ passwd $uname
 EDITOR=vim visudo
 
 #ENABLE DM AND NETWORKING
-systemctl enable lightdm
+systemctl enable sddm
 systemctl enable NetworkManager
 systemctl enable bluetooth
 
-#ENABLE NVIDIA OVERCLOCK SETTINGS
-nvidia-xconfig --cool-bits=24
-
-#GRUB
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-grub-mkconfig -o /boot/grub/grub.cfg
-
-#PRINT PARTUUIDS FOR EFISTUB
-#read -p "Enter linux partition name: " linuxpart
-#ls -l /dev/disk/by-partuuid/ | grep $linuxpart
-#echo Done! Use the PARTUUIDs above to setup EFISTUB, then reboot!.
-#echo --EXAMPLE--
-#echo efibootmgr --disk /dev/sdX --part Y --create --label \"Arch Linux\" --loader /vmlinuz-linux --unicode \'root=PARTUUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX rw initrd=\\initramfs-linux.img\' --verbose
 rm 2
