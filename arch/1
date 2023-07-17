@@ -17,6 +17,7 @@ mkfs.fat -F32 $boot
 mount --mkdir $boot /mnt/boot
 
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+pacman-key --init
 pacman -Sy archlinux-keyring
 pacstrap /mnt base base-devel linux linux-firmware vim
 
