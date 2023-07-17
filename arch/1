@@ -16,31 +16,11 @@ mount /dev/mapper/root /mnt
 mkfs.fat -F32 $boot
 mount --mkdir $boot /mnt/boot
 
-if (whiptail --yesno "Would you like to mount a seperate home partition?" 8 32); then
-	fdisk -l
-	read -p "Choose drive with the home folder: " homedrive
-	fdisk $homedrive
-	fdisk -l $homedrive
-	read -p "Enter home partition: " homepart
-	mkfs.ext4 $homepart
-	mkdir /mnt/home
-	mount $homepart /mnt/home
-fi
-while [ $(whiptail --yesno "Would you like to mount another drive?" 8 32 3>&1 1>&2 2>&3; echo $?) = 0 ]
-do
-        fdisk -l
-        read -p "Choose drive to create/edit partitions on: " newdrive
-        fdisk $newdrive
-        fdisk -l $newdrive
-        read -p "Enter partition to mount: " newpart
-        mkfs.ext4 $newpart
-        read -p "Enter mount point for partition: " newmount
-        mkdir /mnt$newmount
-        mount $newpart /mnt$newmount
-done
-pacstrap /mnt base base-devel linux-firmware linux-zen linux-zen-headers nano
+echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+pacstrap /mnt base base-devel linux linux-firmware vim
+
 genfstab -U /mnt >> /mnt/etc/fstab
-rm 1
 curl -Lo 2 dvcky.github.io/arch/2
 mv 2 /mnt/2
+rm 1
 arch-chroot /mnt sh 2
