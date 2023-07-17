@@ -25,7 +25,7 @@ pacman-key --populate archlinux
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 pacman -S archlinux-keyring
 
-sed -i "s/block filesystems/block encrypt filesystems/" /etc/mkinitcpio.conf
+sed -i "s/consolefont block filesystems/consolefont block encrypt filesystems/" /etc/mkinitcpio.conf
 # DOWNLOAD PACKAGES
 pacman -Sy mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack phonon-qt5-gstreamer ark bluedevil breeze-gtk discover dolphin drkonqi kde-gtk-config kdegraphics-thumbnailers kdeplasma-addons khotkeys konsole kwrite kwrited kscreen kvantum kwallet-pam kwalletmanager partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor plasma-wayland-session powerdevil sddm-kcm spectacle xdg-desktop-portal-kde docker dosfstools easyeffects efibootmgr ffmpegthumbs firefox flatpak git icoutils keepassxc lutris lsp-plugins-lv2 mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra steam sudo syncthing ttf-cascadia-code-nerd ttf-nerd-fonts-symbols unrar
 #pacman -S alacritty blueman bspwm btop curl dmenu dunst efibootmgr feh git gparted grub gvfs gvfs-mtp l3afpad lightdm lightdm-gtk-greeter mpv network-manager-applet noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib pavucontrol picom polkit-gnome polybar pulseaudio pulseaudio-bluetooth sudo sxhkd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ttf-hack ttf-nerd-fonts-symbols tumbler unrar xarchiver xdg-user-dirs xorg-server
