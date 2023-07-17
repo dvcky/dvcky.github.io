@@ -21,6 +21,7 @@ passwd
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 pacman-key --init
+pacman-key --populate archlinux
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 pacman -S archlinux-keyring
 
