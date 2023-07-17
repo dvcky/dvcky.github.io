@@ -32,8 +32,6 @@ pacman -Sy mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver l
 #pacman -S ark bluedevil breeze-gtk curl dolphin drkonqi efibootmgr ffmpegthumbs git grub gwenview icoutils kde-gtk-config kdeplasma-addons khotkeys konsole kvantum-qt5 kwallet-pam kwrite kwrited mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor powerdevil pulseaudio pulseaudio-bluetooth sddm-kcm unrar sudo ttf-nerd-fonts-symbols xdg-desktop-portal-kde xdg-user-dirs xorg-server
 #VM STUFF: qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat edk2-ovmf
 
-mkinitcpio -P
-
 #ADD MORE CORES TO MAKEPKG
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j8\"/" /etc/makepkg.conf
 
