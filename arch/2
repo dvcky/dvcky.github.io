@@ -20,8 +20,8 @@ passwd
 #ENABLE MULTILIB REPO AND UPDATE
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
-echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 pacman-key --init
+echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 pacman -S archlinux-keyring
 
 sed -i "s/block filesystems/block encrypt filesystems/" /etc/mkinitcpio.conf
