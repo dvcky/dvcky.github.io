@@ -23,7 +23,7 @@ sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 pacman-key --init
 pacman-key --populate archlinux
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
-pacman -S archlinux-keyring
+pacman -Syyuu archlinux-keyring
 
 sed -i "s/consolefont block filesystems/consolefont block encrypt filesystems/" /etc/mkinitcpio.conf
 # DOWNLOAD PACKAGES
