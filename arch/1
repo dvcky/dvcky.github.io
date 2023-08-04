@@ -19,7 +19,7 @@ mount --mkdir $boot /mnt/boot
 pacman-key --init
 pacman-key --populate archlinux
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
-pacman -Sy archlinux-keyring
+pacman -Syyuu archlinux-keyring
 pacstrap /mnt base base-devel linux linux-firmware vim
 
 genfstab -U /mnt >> /mnt/etc/fstab
