@@ -1,6 +1,10 @@
 #!/bin/sh
 echo Running chroot, loaded DvckyQAI2!
 
+
+
+# ----SYSTEM----
+
 #SET TIMEZONE AND CLOCK
 ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 hwclock --systohc
@@ -17,38 +21,87 @@ echo "arch" > /etc/hostname
 echo --SET ROOT USER PASSWORD--
 passwd
 
-#ENABLE MULTILIB REPO AND UPDATE
+# --------
+
+
+
+# ----REPOSITORIES----
+
+# ENABLE MULTILIB REPO
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
+# REPLACE STANDARD REPOSITORIES WITH MONTHLY ARCHIVED REPOSITORIES
 pacman-key --init
 pacman-key --populate archlinux
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+
+# UPDATE/APPLY CHANGES
 pacman -Syyuu archlinux-keyring
+
+# --------
+
+
+
+# ----PACKAGES----
 
 sed -i "s/consolefont block filesystems/consolefont block encrypt filesystems/" /etc/mkinitcpio.conf
 # DOWNLOAD PACKAGES
 pacman -Sy mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack phonon-qt5-gstreamer ark bluedevil breeze-gtk dolphin drkonqi kde-gtk-config kdegraphics-thumbnailers kdeplasma-addons khotkeys konsole kwrite kwrited kscreen kvantum kwallet-pam kwalletmanager partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor plasma-wayland-session powerdevil sddm-kcm spectacle xdg-desktop-portal-kde docker dosfstools efibootmgr ffmpegthumbs firefox git icoutils keepassxc lutris mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qbittorrent steam sudo syncthing ttf-nerd-fonts-symbols unrar
-#pacman -S alacritty blueman bspwm btop curl dmenu dunst efibootmgr feh git gparted grub gvfs gvfs-mtp l3afpad lightdm lightdm-gtk-greeter mpv network-manager-applet noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib pavucontrol picom polkit-gnome polybar pulseaudio pulseaudio-bluetooth sudo sxhkd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ttf-hack ttf-nerd-fonts-symbols tumbler unrar xarchiver xdg-user-dirs xorg-server
-#pacman -S ark bluedevil breeze-gtk curl dolphin drkonqi efibootmgr ffmpegthumbs git grub gwenview icoutils kde-gtk-config kdeplasma-addons khotkeys konsole kvantum-qt5 kwallet-pam kwrite kwrited mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra nvidia-dkms nvidia-settings p7zip pacman-contrib partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor powerdevil pulseaudio pulseaudio-bluetooth sddm-kcm unrar sudo ttf-nerd-fonts-symbols xdg-desktop-portal-kde xdg-user-dirs xorg-server
-#VM STUFF: qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat edk2-ovmf
+# VM STUFF: qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat edk2-ovmf
+# POST-INSTALL PARU PACKAGES: jamesdsp mullvad-vpn-bin qview tauon-music-box vscodium-bin
 
-# ADDITIONALLY, INSTALL (using paru): jamesdsp mullvad-vpn-bin qview tauon-music-box vscodium-bin
-
-#ADD MORE CORES TO MAKEPKG
+# ADD MORE CORES TO MAKEPKG DEFAULT SETTINGS (MAKES BUILDING AUR PACKAGES FASTER)
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j8\"/" /etc/makepkg.conf
 
-#CREATE USER
+# IMPROVE FONT SUPPORT
+curl -Lo /etc/fonts/local.conf dvcky.github.io/arch/fontconfig
+
+# --------
+
+
+
+
+# ----AUDIO----
+
+# DISABLE AUDIO OUTPUT SUSPENSION
+mkdir -p /etc/wireplumber/main.lua.d/ /etc/wireplumber/bluetooth.lua.d/
+curl -Lo /etc/wireplumber/main.lua.d/51-disable-suspension.lua https://dvcky.github.io/arch/51-disable-suspension.lua
+curl -Lo /etc/wireplumber/bluetooth.lua.d/51-disable-suspension.lua https://dvcky.github.io/arch/51-disable-suspension-bluetooth.lua
+
+# ENABLE REALTIME AUDIO
+echo "@audio   -  rtprio     95" >> /etc/security/limits.conf
+echo "@audio   -  memlock    unlimited" >> /etc/security/limits.conf
+
+# --------
+
+
+
+# ----USER----
+
 echo --CREATE NORMAL USER--
 read -p "Username: " uname
-useradd -m -G wheel $uname
+useradd -m -G audio,realtime,wheel $uname
 passwd $uname
 
-#SUDO PERMS
+# ADDITIONALLY, ALLOW STANDARD USER TO USE SUDO
+
 EDITOR=vim visudo
 
-#ENABLE DM AND NETWORKING
+# --------
+
+
+
+# ----SERVICES----
+
+# DISPLAY MANAGER
 systemctl enable sddm
+
+# WIRELESS CONNECTIVITY
 systemctl enable NetworkManager
 systemctl enable bluetooth
+
+# --------
+
+
 
 rm 2
