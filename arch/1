@@ -1,6 +1,12 @@
 #!/bin/sh
 read -p "Loaded Dvcky QAI1!"
 timedatectl set-ntp true
+
+
+
+# ----PARTITIONING----
+
+# GET USER INPUT
 fdisk -l
 read -p "Enter drive to install arch here: " drive
 fdisk $drive
@@ -8,19 +14,39 @@ fdisk -l $drive
 read -p "Enter boot partition: " boot
 read -p "Enter linux partition: " linux
 
+# LINUX PARTITION (+ENCRYPTION)
 cryptsetup -y -v luksFormat $linux
-cryptsetup open $linux root
-mkfs.ext4 /dev/mapper/root
-mount /dev/mapper/root /mnt
+cryptsetup open $linux arch
+mkfs.ext4 /dev/mapper/arch
+mount /dev/mapper/arch /mnt
 
+# BOOT PARTITION
 mkfs.fat -F32 $boot
 mount --mkdir $boot /mnt/boot
+
+# --------
+
+
+
+# ----REPOSITORIES----
 
 pacman-key --init
 pacman-key --populate archlinux
 echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 pacman -Syyuu archlinux-keyring
-pacstrap /mnt base base-devel linux linux-firmware vim
+
+# --------
+
+
+
+# ----PACKAGES----
+
+pacstrap /mnt base base-devel linux linux-firmware neovim
+
+# --------
+
+
+
 
 genfstab -U /mnt >> /mnt/etc/fstab
 curl -Lo 2 dvcky.github.io/arch/2
