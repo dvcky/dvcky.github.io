@@ -1,5 +1,4 @@
 #!/bin/sh
-echo Running chroot, loaded DvckyQAI2!
 
 
 
@@ -30,13 +29,8 @@ passwd
 # ENABLE MULTILIB REPO
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
-# REPLACE STANDARD REPOSITORIES WITH MONTHLY ARCHIVED REPOSITORIES
-pacman-key --init
-pacman-key --populate archlinux
-echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
-
 # UPDATE/APPLY CHANGES
-pacman -Syyuu archlinux-keyring
+pacman -Syu archlinux-keyring
 
 # --------
 
@@ -44,11 +38,15 @@ pacman -Syyuu archlinux-keyring
 
 # ----PACKAGES----
 
+# ENABLE ENCRYPTION KERNEL MODULE
 sed -i "s/consolefont block filesystems/consolefont block encrypt filesystems/" /etc/mkinitcpio.conf
+
 # DOWNLOAD PACKAGES
-pacman -Sy mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau pipewire lib32-pipewire wireplumber pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack phonon-qt5-gstreamer ark bluedevil breeze-gtk dolphin drkonqi kde-gtk-config kdegraphics-thumbnailers kdeplasma-addons khotkeys konsole kwrite kwrited kscreen kvantum kwallet-pam kwalletmanager partitionmanager plasma-desktop plasma-nm plasma-pa plasma-systemmonitor plasma-wayland-session powerdevil sddm-kcm spectacle xdg-desktop-portal-kde docker dosfstools efibootmgr ffmpegthumbs firefox git icoutils keepassxc lutris mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qbittorrent steam sudo syncthing ttf-nerd-fonts-symbols unrar
-# VM STUFF: qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat edk2-ovmf
-# POST-INSTALL PARU PACKAGES: jamesdsp mullvad-vpn-bin qview tauon-music-box vscodium-bin
+pacman -Sy docker efibootmgr flatpak flatpak-kcm git sudo
+pacman -Sy mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau 
+pacman -Sy pipewire lib32-pipewire wireplumber pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack
+pacman -Sy plasma-meta ark p7zip unarchiver dolphin ffmpegthumbs kdegraphics-thumbnailers kio-admin konsole kwrite kvantum partitionmanager spectacle firefox imv keepassxc lutris mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qbittorrent steam ttf-nerd-fonts-symbols
+# POST-INSTALL PARU PACKAGES: paru-bin (mullvad-vpn-bin && vscodium-bin), with flatpak (nicotine+ && tauon-music-box)
 
 # ADD MORE CORES TO MAKEPKG DEFAULT SETTINGS (MAKES BUILDING AUR PACKAGES FASTER)
 sed -i "s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j8\"/" /etc/makepkg.conf
@@ -60,32 +58,16 @@ curl -Lo /etc/fonts/local.conf dvcky.github.io/arch/fontconfig
 
 
 
-
-# ----AUDIO----
-
-# DISABLE AUDIO OUTPUT SUSPENSION
-mkdir -p /etc/wireplumber/main.lua.d/ /etc/wireplumber/bluetooth.lua.d/
-curl -Lo /etc/wireplumber/main.lua.d/51-disable-suspension.lua https://dvcky.github.io/arch/51-disable-suspension.lua
-curl -Lo /etc/wireplumber/bluetooth.lua.d/51-disable-suspension.lua https://dvcky.github.io/arch/51-disable-suspension-bluetooth.lua
-
-# ENABLE REALTIME AUDIO
-echo "@audio   -  rtprio     95" >> /etc/security/limits.conf
-echo "@audio   -  memlock    unlimited" >> /etc/security/limits.conf
-
-# --------
-
-
-
 # ----USER----
 
 echo --CREATE NORMAL USER--
 read -p "Username: " uname
-useradd -m -G audio,realtime,wheel $uname
+useradd -mG wheel $uname
 passwd $uname
 
 # ADDITIONALLY, ALLOW STANDARD USER TO USE SUDO
 
-EDITOR=vim visudo
+EDITOR=nvim visudo
 
 # --------
 
@@ -102,6 +84,6 @@ systemctl enable bluetooth
 
 # --------
 
-
+echo "Now create your boot entry! Example: \"efibootmgr --create --disk /dev/nvme0n1 --part 1 --label \"arch\" --loader /vmlinuz-linux --unicode 'cryptdevice=/dev/nvme0n1p2:root root=/dev/mapper/root rw quiet initrd=\initramfs-linux.img'\""
 
 rm 2
