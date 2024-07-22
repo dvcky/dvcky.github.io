@@ -1,5 +1,6 @@
 #!/bin/sh
-read -p "Loaded Dvcky QAI1!"
+echo "Loaded Dvcky QAI!"
+read -p "Press enter to continue..."
 timedatectl set-ntp true
 
 
@@ -11,18 +12,18 @@ fdisk -l
 read -p "Enter drive to install arch here: " drive
 fdisk $drive
 fdisk -l $drive
-read -p "Enter boot partition: " boot
-read -p "Enter linux partition: " linux
+read -p "Enter boot partition: " boot_part
+read -p "Enter system partition: " sys_part
 
-# LINUX PARTITION (+ENCRYPTION)
-cryptsetup -y -v luksFormat $linux
-cryptsetup open $linux arch
-mkfs.ext4 /dev/mapper/arch
-mount /dev/mapper/arch /mnt
+# SYSTEM PARTITION (+ENCRYPTION)
+cryptsetup -y -v luksFormat $sys_part
+cryptsetup open $sys_part root
+mkfs.ext4 /dev/mapper/root
+mount /dev/mapper/root /mnt
 
 # BOOT PARTITION
-mkfs.fat -F32 $boot
-mount --mkdir $boot /mnt/boot
+mkfs.fat -F32 $boot_part
+mount --mkdir $boot_part /mnt/boot
 
 # --------
 
@@ -30,10 +31,7 @@ mount --mkdir $boot /mnt/boot
 
 # ----REPOSITORIES----
 
-pacman-key --init
-pacman-key --populate archlinux
-echo "Server = https://america.archive.pkgbuild.com/repos/month/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
-pacman -Syyuu archlinux-keyring
+pacman -Syu archlinux-keyring
 
 # --------
 
