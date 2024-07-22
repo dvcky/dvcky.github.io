@@ -42,10 +42,10 @@ pacman -Syu archlinux-keyring
 sed -i "s/consolefont block filesystems/consolefont block encrypt filesystems/" /etc/mkinitcpio.conf
 
 # DOWNLOAD PACKAGES
-pacman -Sy docker efibootmgr flatpak flatpak-kcm git sudo
-pacman -Sy mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau 
-pacman -Sy pipewire lib32-pipewire wireplumber pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack
-pacman -Sy plasma-meta ark p7zip unarchiver dolphin ffmpegthumbs kdegraphics-thumbnailers kio-admin konsole kwrite kvantum partitionmanager spectacle firefox imv keepassxc lutris mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qbittorrent steam ttf-nerd-fonts-symbols
+pacman -Sy docker efibootmgr flatpak flatpak-kcm git sudo \
+mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau \
+pipewire lib32-pipewire wireplumber pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack \
+plasma-meta ark p7zip unarchiver dolphin ffmpegthumbs kdegraphics-thumbnailers kio-admin konsole kwrite kvantum partitionmanager spectacle firefox imv keepassxc lutris mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qbittorrent steam ttf-nerd-fonts-symbols
 # POST-INSTALL PARU PACKAGES: paru-bin (mullvad-vpn-bin && vscodium-bin), with flatpak (nicotine+ && tauon-music-box)
 
 # ADD MORE CORES TO MAKEPKG DEFAULT SETTINGS (MAKES BUILDING AUR PACKAGES FASTER)
@@ -81,6 +81,9 @@ systemctl enable sddm
 # WIRELESS CONNECTIVITY
 systemctl enable NetworkManager
 systemctl enable bluetooth
+
+# DOCKER
+systemctl enable docker
 
 # --------
 
