@@ -30,8 +30,8 @@ passwd
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 # UPDATE/APPLY CHANGES
+pacman -Syu archlinux-keyring reflector
 reflector --save /etc/pacman.d/mirrorlist --country "United States" --protocol https --latest 5 --sort age
-pacman -Syu archlinux-keyring
 
 # --------
 
