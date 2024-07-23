@@ -42,7 +42,7 @@ pacman -Syu archlinux-keyring
 sed -i "s/consolefont block filesystems/consolefont block encrypt filesystems/" /etc/mkinitcpio.conf
 
 # DOWNLOAD PACKAGES
-pacman -Sy docker docker-compose efibootmgr flatpak flatpak-kcm git sudo \
+pacman -Sy docker docker-compose efibootmgr flatpak flatpak-kcm git reflector sudo \
 mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau \
 pipewire lib32-pipewire wireplumber pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack \
 plasma-meta ark p7zip unarchiver dolphin ffmpegthumbs kdegraphics-thumbnailers kio-admin konsole kwalletmanager kwrite kvantum partitionmanager spectacle firefox keepassxc lutris mpv noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra qbittorrent steam ttf-nerd-fonts-symbols
@@ -60,7 +60,7 @@ curl -Lo /etc/fonts/local.conf dvcky.github.io/arch/fontconfig
 
 echo --CREATE NORMAL USER--
 read -p "Username: " uname
-useradd -mG wheel $uname
+useradd -mG docker,wheel $uname
 passwd $uname
 
 # ADDITIONALLY, ALLOW STANDARD USER TO USE SUDO
@@ -86,5 +86,6 @@ systemctl enable docker
 # --------
 
 echo "Now create your boot entry! Example: \"efibootmgr --create --disk /dev/nvme0n1 --part 1 --label \"arch\" --loader /vmlinuz-linux --unicode 'cryptdevice=/dev/nvme0n1p2:root root=/dev/mapper/root rw quiet initrd=\initramfs-linux.img'\""
+echo "Also configure and enable the reflector service for the best mirrors daily!"
 
 rm 2
